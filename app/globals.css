@@ -2,26 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.gradient-text {
+  background: linear-gradient(to bottom, #dcdcdc, #4d4d4d);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.bg-gradient {
+  @apply fixed top-0 left-0 right-0 z-10 p-1 overflow-hidden;
+}
+
+.title {
+  @apply hidden text-center font-semibold text-white text-xs;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #18181B;
+}
+
+.loading {
+  border: 4px solid #11E096;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  /* Utiliza la animación spin definida anteriormente */
+}
+
+.item {
+  color: #fff;
+  position: relative;
+  overflow: hidden; /* Asegura que el borde animado esté dentro del div */
+}
+
+.item:before {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: conic-gradient(#60D5A8 0% 25%, transparent 0% 50%);
+  transition: all .3s;
+  animation: recorrer 4s linear infinite;
+}
+
+@keyframes recorrer {
+  0% {
+    left: -100%; /* Mueve el borde completamente fuera del div a la izquierda */
+  }
+  100% {
+    left: 100%; /* Mueve el borde completamente fuera del div a la derecha */
+  }
+  0% {
+    right:-100%; /* Mueve el borde completamente fuera del div a la izquierda */
+  }
+  100% {
+    right: 100%; /* Mueve el borde completamente fuera del div a la derecha */
+  }
+}
+
+.uno:before {
+  left: -100%; /* Inicialmente, coloca el borde completamente fuera del div a la izquierda */
 }
