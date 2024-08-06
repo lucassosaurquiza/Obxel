@@ -8,6 +8,7 @@ import { FaHeart } from "react-icons/fa";
 import Image from "next/image";
 import SeccionPlantillas from "./Componentes/SeccionPlantillas";
 import CarrouselTextoVertical from "./Componentes/CarrouselTexto";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Home() {
 
@@ -33,37 +34,37 @@ export default function Home() {
       <section className="w-full py-10 md:py-16 xl:py-14 transition-all ease-in-out duration-500 flex  justify-center animate-slideInLeft">
         <div className="md:flex  max-w-7xl gap-10">
           <div className="mb-10 md:mb-0">
-            <h1 className="text-3xl font-bold tracking-tighter mb-12 lg:text-5xl/none bg-gradient-to-r from-emerald-500 via-emerald-300 to-emerald-400 text-transparent bg-clip-text  items-center flex justify-center text-center">
-              Digitaliza tu idea y transformala en software
+            <h1 className="text-3xl font-bold tracking-tighter mb-12 lg:text-4xl bg-gradient-to-r from-emerald-500 via-emerald-300 to-emerald-400 text-transparent bg-clip-text  items-center flex justify-center text-center">
+              Digitalizá tu idea y transformala en software
             </h1>
             <p className="text-gray-300 lg:text-xl text-center font-bold mb-12">
               Diseños Web - Landing Page - Web Personalizadas - Web Avanzadas - Tiendas Online - Publicidades - Posicionamiento - Asesoramiento de Marca
             </p>
-            <p className="text-3xl text-center mb-12 bg-gradient-to-r from-emerald-500 via-emerald-300 to-emerald-400 text-transparent bg-clip-text font-bold lg:text-5xl">
-              Crea, personaliza, posiciona y competi en linea
+            <p className="text-3xl text-center mb-12 bg-gradient-to-r from-emerald-500 via-emerald-300 to-emerald-400 text-transparent bg-clip-text font-bold lg:text-4xl">
+              Creá, personalizá, posicioná y competí en línea
             </p>
-            <Link target="blank" href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'>
-              <div className="flex justify-center text-center">
-                <button className="font-bold text-gray-300 hover:text-white max-w-xs bg-transparent border hover:border-none hover:bg-gradient-to-r hover:from-emerald-300 hover:via-emerald-800 hover:to-emerald-500 rounded-md p-2 hover:transition-transform hover:transform hover:scale-105">
+            <div className="flex justify-center text-center ">
+              <Link target="blank" href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'>
+                <button className="font-bold text-white bg-transparent border  border-gray-200 opacity-50 hover:opacity-100 hover:bg-gradient-to-r hover:from-emerald-300 hover:via-emerald-800 hover:to-emerald-500 rounded-md px-4 py-2 transform transition-all duration-500 hover:scale-125">
                   Hablamos
                 </button>
-              </div>
-            </Link>
+              </Link>
+            </div>
           </div>
           <div className=" w-full">
             <h2 className="justify-center text-center flex text-lg font-bold tracking-tighter sm:text-xl xl:text-3xl/none bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5">Ultimo proyecto realizado</h2>
             <div className="">
               <div className="item uno">
                 <div>
-                  <p className="text-gray-300 md:text-md font-bold justify-center flex mb-5 text-center">Web Avanzada - "La Cocina de Edu" - 15/11/2023</p>
+                  <p className="text-gray-300 md:text-md font-bold justify-center flex mb-5 text-center">Programa Personalizado - "Institucion Educativa - New English School" - 30/07/2024</p>
                 </div>
                 <div className="">
-                  <Link aria-label="Image link to a specified place" href="https://www.lacocinadeedu.com.ar/" target="blank">
+                  <Link aria-label="Image link to a specified place" href="https://esi-dashboard-ten.vercel.app/login" target="blank">
                     <div className="group">
                       <Image
                         alt="Image Description"
                         className="rounded-md transform transition-all duration-500 ease-in-out group-hover:scale-90  mb-5"
-                        src="/screen-edu.png"
+                        src="/Programa-Institucion-Educativa.png"
                         layout="responsive"
                         width="50"
                         height="50"
@@ -79,10 +80,19 @@ export default function Home() {
       </section>
       <section className="w-full items-center flex justify-center">
         <div className="md:flex max-w-7xl gap-5 mb-20 ">
-          <div className="w-full p-3 rounded-md mb-5 md:mb-0" style={{ background: 'linear-gradient(to right,#004B3A, #4ED09E )' }}>
-            <h2 className="md:text-3xl text-2xl text-gray-300 font-bold mb-10 md:flex text-center md:text-left">Conoce nuestros
-              <span className="text-[#0E0F18] ml-2 font-bold ">precios</span>
-            </h2>
+          <div className="w-full p-3 rounded-md mb-5 md:mb-0 " style={{ background: 'linear-gradient(to right,#004B3A, #4ED09E )' }}>
+            <div className="flex items-center justify-around space-x-4 mb-8">
+              <h2 className="md:text-3xl text-2xl text-gray-300 font-bold text-center">
+                Conoce nuestros
+                <span className="text-[#0E0F18] ml-2 font-bold">precios</span>
+              </h2>
+              <Link href="/Precios">
+                <button className="flex items-center font-bold text-gray-300 hover:text-[#0E0F18] transform transition duration-300 hover:scale-105 gap-2">
+                  Ver
+                  <FaArrowRightLong />
+                </button>
+              </Link>
+            </div>
 
             <div className="flex gap-5 mb-5">
               <div className="rounded-md items-center flex p-3 bg-[#0E0F18] h-10 max-w-16">
@@ -90,10 +100,10 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-bold text-gray-300">
-                  +20 personas construyeron su perfil digital
+                  +20 personas construyeron su perfil digital con nosotros
                 </p>
                 <p className="text-gray-300 ">
-                  ¿Que estas esperando para digitalizar tu comercio?, te damos soporte a tu pagina por 6 meses.
+                  ¿Que estas esperando para digitalizar tu profesion?, le damos soporte gratuito a tu pagina por 6 meses.
                 </p>
               </div>
             </div>
@@ -106,7 +116,7 @@ export default function Home() {
                   Paga una sola vez, tenelo para siempre
                 </p>
                 <p className="text-gray-300 ">
-                  No te cobramos por ningun mantenimiento extra o mejoras pequeñas, pagas una sola vez y es tuyo.
+                  Nuestros precios son súper accesibles. Te ofrecemos la opción de pagarlos en cómodas cuotas, sin intereses.
                 </p>
               </div>
             </div>
@@ -141,7 +151,12 @@ export default function Home() {
                   <Link target="blank" href='https://www.cuatrocarnes.com/'>
                     <img className="h-8 w-8 rounded-full transform transition-transform hover:scale-150 bg-white" src="cuatro-carnes.svg" alt="" />
                   </Link>
-
+                  <Link target="blank" href='https://esi-dashboard-ten.vercel.app/login'>
+                    <img className="h-8 w-8 rounded-full transform transition-transform hover:scale-150 bg-white" src="Logo-Institucion-Educativa.jpg" alt="" />
+                  </Link>
+                  <Link target="blank" href='https://maquetado-sushi.vercel.app/'>
+                    <img className="h-8 w-8 rounded-full transform transition-transform hover:scale-150 bg-white" src="/sushi.png" alt="" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -160,70 +175,22 @@ export default function Home() {
                 Web Avanzada
               </h1>
               <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl mb-10">
-                Nuestra opcion de web avanzada es la mas solicitada por nuestros clientes hasta el momento. Revisa las caracteristicas de esta opcion dandole clic aca abajo.
+                Nuestra opcion de web avanzada es la mas solicitada por nuestros clientes. Revisa las caracteristicas de esta opcion dando clic al boton.
               </p>
-              <Link href='Precios'>
-                <div className="flex justify-center text-center">
-                  <button className="font-bold text-gray-300 hover:text-white max-w-xs bg-transparent border hover:border-none hover:bg-gradient-to-r hover:from-emerald-300 hover:via-emerald-800 hover:to-emerald-500 rounded-md p-2 hover:transition-transform hover:transform hover:scale-105">
-                    Ver otras opciones
+              <div className="flex justify-center text-center ">
+                <Link  href='/Plantillas'>
+                  <button className="font-bold text-white bg-transparent border  border-gray-200 opacity-50 hover:opacity-100 hover:bg-gradient-to-r hover:from-emerald-300 hover:via-emerald-800 hover:to-emerald-500 rounded-md px-4 py-2 transform transition-all duration-500 hover:scale-125">
+                    Ver Caracteristicas
                   </button>
-                </div>
-              </Link>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="flex flex-col lg:flex-row lg:justify-center lg:items-start lg:gap-8" >
-        <div className="max-w-7xl mb-20">
-          <div className="text-center max-w-7xl">
-            <div className="">
-              <h2 className="flex justify-center text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-4">Paquetes de publicidad</h2>
-              <p className="text-lg text-gray-300 mb-10">
-                Hace crecer tu negocio con publicidades, elegi el que mas se acomode a tu necesidad.
-              </p>
-              <CarrouselTextoVertical items={carouselItems} />
-            </div>
-            <div className="flex justify-center text-center">
-              <Link href='Marketing'>
-              <button className="font-bold text-gray-300 hover:text-white max-w-xs bg-transparent border hover:border-none hover:bg-gradient-to-r hover:from-emerald-300 hover:via-emerald-800 hover:to-emerald-500 rounded-md p-2 hover:transition-transform hover:transform hover:scale-105">
-                Quiero saber mas!
-              </button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="flex flex-col lg:flex-row lg:justify-center lg:items-start lg:gap-8 " >
-        <div className="max-w-7xl mb-20">
-          <div className="text-center max-w-7xl">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-4">¿Que es el SEO?</h2>
-            <p className="text-lg text-gray-300 mb-20">
-              Conoce todo lo que necesitas saber sobre que es el posicionamiento, las palabras claves y su importancia en un sitio web.
-            </p>
-            <div className="flex justify-center text-center">
-              <button className="font-bold text-gray-300 hover:text-white max-w-xs bg-transparent border hover:border-none hover:bg-gradient-to-r hover:from-emerald-300 hsover:via-emerald-800 hover:to-emerald-500 rounded-md p-2 hover:transition-transform hover:transform hover:scale-105">
-                Damelo ya!
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="flex flex-col lg:flex-row lg:justify-center lg:items-start lg:gap-8 " >
-        <div className="max-w-7xl mb-20">
-          <div className="text-center max-w-7xl">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-4">Asesoramiento para marcas</h2>
-            <p className="text-lg text-gray-300 mb-20">
-              En Obxel, te guiamos en el camino de construir y fortalecer tu marca digital. Si estás empezando, te asesoramos para que des los primeros pasos con confianza.
-              Y si ya tienes una marca, trabajamos contigo para expandir tu negocio de manera efectiva. En Obxel, estamos para hacer que tu marca crezca de manera real y práctica.
-            </p>
-            <div className="flex justify-center text-center">
-              <button className="font-bold text-gray-300 hover:text-white max-w-xs bg-transparent border hover:border-none hover:bg-gradient-to-r hover:from-emerald-300 hover:via-emerald-800 hover:to-emerald-500 rounded-md p-2 hover:transition-transform hover:transform hover:scale-105">
-                Nuestros planes
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+
+
+
       <section className="items-center flex justify-center">
         <div className="max-w-7xl mb-20">
           <SeccionPlantillas />
