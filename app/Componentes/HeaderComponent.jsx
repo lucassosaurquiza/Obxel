@@ -21,7 +21,7 @@ const HeaderComponent = () => {
               <h1 className="text-3xl text-white font-bold tracking-widest">Obxel</h1>
             </div>
             <div className="bg-[#11E096] p-1 md:hidden">
-              <p className="text-white font-bold text-3xl">OP</p>
+              <p className="text-white font-bold text-3xl">OX</p>
             </div>
           </Link>
           <nav className="md:flex gap-4">
@@ -35,14 +35,14 @@ const HeaderComponent = () => {
               <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="Marketing">
                 Marketing
               </Link>
-              <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="TuMarca">
-                Tu Marca
+              <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="Marca">
+               Marca
               </Link>
               <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="Plantillas">
-                Plantillas
+                Proyectos
               </Link>
               <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="IA">
-                Blog
+                Analisis de mercado
               </Link>
               <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="Nosotros">
                 Nosotros
