@@ -15,7 +15,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <HeaderComponent />
+      <header>
+        <HeaderComponent />
+      </header>
       <body className={`${inter.className} bg-cover bg-center bg-no-repeat bg-fixed bg-[url('/fondo-cuadriculado.jpg')] animate-fadeInFromTop`}>{children}
         <BotonWpp />
       </body>
