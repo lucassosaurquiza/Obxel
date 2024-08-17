@@ -68,13 +68,38 @@ export default function BotonHamburguesa() {
                   </Dialog.Title>
                   <div className="mt-2 flex flex-col justify-center items-center">
                     <Link href='/' onClick={closeModal}>
-                      <p className="text-sm text-gray-500 font-bold mb-3 hover:text-[#11E096] transition duration-300 ease-in-out cursor-pointer">
+                      <p className="text-sm text-gray-500 font-bold mb-2 hover:text-[#11E096] transition duration-300 ease-in-out cursor-pointer">
                         Inicio
                       </p>
                     </Link>
                     <Link href='/Precios' onClick={closeModal}>
-                      <p className="text-sm text-gray-500 font-bold hover:text-[#11E096] transition duration-300 ease-in-out cursor-pointer">
+                      <p className="text-sm text-gray-500 font-bold  mb-2  hover:text-[#11E096] transition duration-300 ease-in-out cursor-pointer">
                         Precios
+                      </p>
+                    </Link>
+                    <Link href='/Marketing' onClick={closeModal}>
+                      <p className="text-sm text-gray-500 font-bold  mb-2  hover:text-[#11E096] transition duration-300 ease-in-out cursor-pointer">
+                        Marketing
+                      </p>
+                    </Link>
+                    <Link href='/Marca' onClick={closeModal}>
+                      <p className="text-sm text-gray-500 font-bold mb-2 hover:text-[#11E096] transition duration-300 ease-in-out cursor-pointer">
+                       Marca
+                      </p>
+                    </Link>
+                    <Link href='/Proyectos' onClick={closeModal}>
+                      <p className="text-sm text-gray-500 font-bold mb-2 hover:text-[#11E096] transition duration-300 ease-in-out cursor-pointer">
+                        Proyectos
+                      </p>
+                    </Link>
+                    <Link href='/Analisis' onClick={closeModal}>
+                      <p className="text-sm text-gray-500 font-bold mb-2 hover:text-[#11E096] transition duration-300 ease-in-out cursor-pointer">
+                        Analisis de Mercado
+                      </p>
+                    </Link>
+                    <Link href='/Nosotros' onClick={closeModal}>
+                      <p className="text-sm text-gray-500 font-bold mb-2 hover:text-[#11E096] transition duration-300 ease-in-out cursor-pointer">
+                        Nosotros
                       </p>
                     </Link>
                   </div>
