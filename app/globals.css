@@ -78,3 +78,18 @@
 .uno:before {
   left: -100%; /* Inicialmente, coloca el borde completamente fuera del div a la izquierda */
 }
+
+/*Colores*/
+
+:root {
+  --primary-color: #0E0F18;
+  --primary-color-dark: #0A0B12;
+  --primary-color-light: #3A3C4F;
+
+  --secondary-color: #11e096;
+  --secondary-color-dark: #0e9d76;
+  --secondary-color-light: #5af6c0;
+
+  --tertiary-color: #ffffff;
+  --tertiary-color-dark: #f0f0f0;
+}
