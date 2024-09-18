@@ -93,3 +93,16 @@
   --tertiary-color: #ffffff;
   --tertiary-color-dark: #f0f0f0;
 }
+
+.custom-bg {
+  position: relative;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background-color: transparent;
+  background-image: linear-gradient(to top, rgba(17, 224, 150, 0.5) 100%, transparent 60%);
+  background-size: 100% 40%;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+

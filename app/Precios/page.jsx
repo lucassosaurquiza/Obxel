@@ -13,7 +13,7 @@ const Precios = () => {
           </h1>
           <div className='flex flex-col items-center'>
             <p className='mx-auto max-w-[700px] text-gray-300 text-[20px] text-center mb-4'>
-              Con <bg>tarifas competitivas</bg> y <bg>total transparencia</bg>,
+              Con <bg className='custom-bg'>tarifas competitivas</bg> y <bg className='custom-bg'>total transparencia</bg>,
               te brindamos soluciones a medida que se ajustan a tus necesidades
               y presupuesto.
             </p>
@@ -189,7 +189,7 @@ const Precios = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 cursor-pointer'>
+                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
                           <button className='font-bold py-2 text-[20px]'>
                             Contratar
                           </button>
@@ -274,7 +274,7 @@ const Precios = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 cursor-pointer'>
+                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
                           <button className='font-bold py-2 text-[20px]'>
                             Contratar
                           </button>
@@ -353,7 +353,7 @@ const Precios = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 cursor-pointer'>
+                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
                           <button className='font-bold py-2 text-[20px]'>
                             Contratar
                           </button>
@@ -433,7 +433,7 @@ const Precios = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 cursor-pointer'>
+                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
                           <button className='font-bold py-2 text-[20px]'>
                             Contratar
                           </button>
@@ -507,7 +507,7 @@ const Precios = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 cursor-pointer'>
+                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
                           <button className='font-bold py-2 text-[20px] text-[var(--primary-color)]'>
                             Contratar
                           </button>
@@ -556,7 +556,7 @@ const Precios = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 cursor-pointer'>
+                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
                           <button className='font-bold py-2 text-[20px] text-[var(--primary-color)]'>
                             Contratar
                           </button>
@@ -611,7 +611,7 @@ const Precios = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 cursor-pointer'>
+                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
                           <button className='font-bold py-2 text-[20px] text-[var(--primary-color)]'>
                             Contratar
                           </button>

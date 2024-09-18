@@ -1,27 +1,31 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Footer from './Componentes/Footer'
-import BotonWpp from './Componentes/BotonWpp'
-import HeaderComponent from './Componentes/HeaderComponent'
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Footer from "./Componentes/Footer";
+import BotonWpp from "./Componentes/BotonWpp";
+import HeaderComponent from "./Componentes/HeaderComponent";
+import BouncingBox from "./Componentes/BoucingBox";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Obxel',
-  description: 'Desarrollo de Software',
-}
+  title: "Obxel",
+  description: "Desarrollo de Software",
+};
 
 export default function RootLayout({ children }) {
-
   return (
-    <html lang="en">
+    <html lang='en'>
       <header>
         <HeaderComponent />
       </header>
-      <body className={`${inter.className} bg-cover bg-center bg-no-repeat bg-fixed bg-[url('/fondo-cuadriculado.jpg')] animate-fadeInFromTop`}>{children}
+      <body
+        className={`${inter.className} bg-cover bg-center bg-no-repeat bg-fixed bg-[url('/fondo-cuadriculado.jpg')] animate-fadeInFromTop`}
+      >
+        <BouncingBox />
+        {children}
         <BotonWpp />
       </body>
       <Footer />
     </html>
-  )
+  );
 }
