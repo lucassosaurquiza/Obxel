@@ -3,6 +3,7 @@ import './globals.css'
 import Footer from './Componentes/Footer'
 import BotonWpp from './Componentes/BotonWpp'
 import HeaderComponent from './Componentes/HeaderComponent'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,13 +16,16 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <header>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </Head>
+      <body className={`${inter.className} bg-cover bg-center bg-no-repeat bg-fixed bg-[url('/fondo-cuadriculado.jpg')] animate-fadeInFromTop`}>
         <HeaderComponent />
-      </header>
-      <body className={`${inter.className} bg-cover bg-center bg-no-repeat bg-fixed bg-[url('/fondo-cuadriculado.jpg')] animate-fadeInFromTop`}>{children}
+        {children}
         <BotonWpp />
+        <Footer />
       </body>
-      <Footer />
     </html>
   )
 }

@@ -10,7 +10,7 @@ const HeaderComponent = () => {
   return (
 
     <>
-      <header className="animate-fadeInFromTop">
+      <header className="animate-fadeInFromTop z-10 relative">
         <div className="bg-gradient bg-gradient-to-r from-emerald-300 via-emerald-800 to-emerald-500 md:flex justify-center  items-center hidden">
           <h2 id="title1" className="text-white font-bold text-xs flex justify-center  items-center">Diseños Web -  Paginas de una y varias vistas - Programas Personalizados - Web Avanzadas - Tiendas Online - Publicidades - Posicionamiento</h2>
         </div>

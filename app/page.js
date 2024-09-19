@@ -10,7 +10,7 @@ import SeccionProyectos from "./Componentes/SeccionProyectos";
 export default function Home() {
 
   return (
-    <section className="w-full  text-white transition-all ease-in-out duration-500 pt-20 md:pt-24 px-4 ">
+    <section className="w-full  text-white transition-all ease-in-out duration-500 pt-20 md:pt-24  ">
       <SeccionInicio />
       <SeccionPrecios />
       <SeccionMarketing />
