@@ -21,8 +21,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} bg-cover bg-center bg-no-repeat bg-fixed bg-[url('/fondo-cuadriculado.jpg')] animate-fadeInFromTop`}
       >
-        <BouncingBox />
         {children}
+        <BouncingBox />
         <BotonWpp />
       </body>
       <Footer />
