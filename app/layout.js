@@ -4,6 +4,7 @@ import Footer from './Componentes/Footer'
 import BotonWpp from './Componentes/BotonWpp'
 import HeaderComponent from './Componentes/HeaderComponent'
 import Head from 'next/head'
+import BouncingBox from './Componentes/BoucingBox'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} bg-cover bg-center bg-no-repeat bg-fixed bg-[url('/fondo-cuadriculado.jpg')] animate-fadeInFromTop`}>
         <HeaderComponent />
         {children}
+        <BouncingBox />
         <BotonWpp />
         <Footer />
       </body>
