@@ -78,3 +78,31 @@
 .uno:before {
   left: -100%; /* Inicialmente, coloca el borde completamente fuera del div a la izquierda */
 }
+
+/*Colores*/
+
+:root {
+  --primary-color: #0E0F18;
+  --primary-color-dark: #0A0B12;
+  --primary-color-light: #3A3C4F;
+
+  --secondary-color: #11e096;
+  --secondary-color-dark: #0e9d76;
+  --secondary-color-light: #5af6c0;
+  
+  --tertiary-color: #ffffff;
+  --tertiary-color-dark: #f0f0f0;
+}
+
+.custom-bg {
+  position: relative;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background-color: transparent;
+  background-image: linear-gradient(to top, rgba(17, 224, 150, 0.5) 100%, transparent 60%);
+  background-size: 100% 40%;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+

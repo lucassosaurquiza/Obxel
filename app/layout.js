@@ -5,15 +5,14 @@ import BotonWpp from './Componentes/BotonWpp'
 import HeaderComponent from './Componentes/HeaderComponent'
 import Head from 'next/head'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Obxel',
-  description: 'Desarrollo de Software',
-}
+  title: "Obxel",
+  description: "Desarrollo de Software",
+};
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
       <Head>
@@ -27,5 +26,5 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
     </html>
-  )
+  );
 }

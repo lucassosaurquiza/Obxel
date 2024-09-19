@@ -1,3 +1,5 @@
+"use client";
+
 import { AiOutlineWhatsApp } from 'react-icons/ai'
 import MensajeAyuda from './MensajeAyuda'
 
