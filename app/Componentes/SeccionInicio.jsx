@@ -4,7 +4,7 @@ import React from 'react'
 
 export const SeccionInicio = () => {
   return (
-    <section className="w-full py-10 md:py-16 xl:py-14 transition-all ease-in-out duration-500 flex  justify-center animate-slideInLeft">
+    <section className="w-full pb-10 md:py-16 xl:py-14 transition-all ease-in-out duration-500 flex  justify-center animate-slideInLeft">
       <div className="md:flex  max-w-7xl gap-10">
         <div className="mb-10 md:mb-0">
           <h1 className="text-3xl font-bold tracking-tighter mb-12 lg:text-4xl bg-gradient-to-r from-emerald-500 via-emerald-300 to-emerald-400 text-transparent bg-clip-text items-center flex justify-center text-center">
@@ -36,7 +36,7 @@ export const SeccionInicio = () => {
                   <div className="group">
                     <Image
                       alt="Image Description"
-                      className="rounded-md transform transition-all duration-500 ease-in-out group-hover:scale-90  mb-5"
+                      className="rounded-md transform transition-all duration-500 ease-in-out group-hover:scale-90 z-0 mb-5"
                       src="/Programa-Institucion-Educativa.png"
                       layout="responsive"
                       width="50"

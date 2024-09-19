@@ -2,14 +2,14 @@ import Link from 'next/link'
 
 const SeccionProyectos = () => {
   return (
-    <section className="w-full">
-      <div className="grid gap-4 text-center lg:gap-10">
+    <section className="w-full pb-10">
+      <div className="grid gap-4 text-center lg:gap-10 lg:px-8 xl:px-16">
         <div className="space-y-3 mb-10">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">Proyectos</h2>
-          <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 text-2xl font-bold">
+          <h2 className="justify-center text-center flex  font-bold tracking-tighter text-3xl xl:text-5xl/none bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-8">Proyectos</h2>
+          <p className="text-gray-300 lg:text-xl text-center font-bold ">
             ¿No sabes como diseñar tu web?
           </p>
-          <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+          <p className="text-gray-400 lg:text-xl text-center font-bold ">
             Elegi una, nosotros nos encargamos del resto.
           </p>
         </div>
@@ -17,7 +17,8 @@ const SeccionProyectos = () => {
           <Link href="https://www.cuatrocarnes.com/" target='blank'>
             <div className="group flex flex-col p-4 border hover:border-none border-gray-200 shadow-sm bg-transparent transition-transform hover:scale-105 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-t from-gray-300 via-gray-800 to-black opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <h3 className="relative mt-4 mx-auto max-w-[700px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-white text-sm group-hover:underline font-bold">
+              <h3 className="text-2xl  relative mt-4 mx-auto max-w-[700px] bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 md:text-xl/relaxed  group-hover:underline
+               font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-500">
                 Tienda Online
               </h3>
               <img
@@ -27,7 +28,7 @@ const SeccionProyectos = () => {
                 src="/plantilla-cuatro-carnes.png"
                 width="200"
               />
-              <p className="relative mb-10 text-white text-sm xl:text-lg font-bold">
+              <p className="relative mb-10 text-gray-300 lg:text-sm text-center font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-500">
                 "Cuatro carnes"
               </p>
             </div>
@@ -35,7 +36,8 @@ const SeccionProyectos = () => {
           <Link href="https://landing-venta-de-cursos.vercel.app/" target='blank'>
             <div className="group flex flex-col p-4 border hover:border-none border-gray-200 shadow-sm bg-transparent transition-transform hover:scale-105 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-t from-pink-300 via-pink-800 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <h3 className="relative mt-4 mx-auto max-w-[700px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-white text-sm group-hover:underline font-bold">
+              <h3 className="text-2xl  relative mt-4 mx-auto max-w-[700px] bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 md:text-xl/relaxed  group-hover:underline
+               font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-500">
                 Web Avanzada
               </h3>
               <img
@@ -45,7 +47,7 @@ const SeccionProyectos = () => {
                 src="/plantilla-landing-cursos.png"
                 width="200"
               />
-              <p className="relative mb-10 text-white text-sm xl:text-lg font-bold">
+              <p className="relative mb-10 text-gray-300 lg:text-sm text-center font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-500">
                 "Landing wiht josefina"
               </p>
             </div>
@@ -53,7 +55,8 @@ const SeccionProyectos = () => {
           <Link href="https://alize-landing-page.vercel.app/" target='blank'>
             <div className="group flex flex-col p-4 border hover:border-none border-gray-200 shadow-sm bg-transparent transition-transform hover:scale-105 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-t from-red-300 via-red-800 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <h3 className="relative mt-4 mx-auto max-w-[700px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-white text-sm group-hover:underline font-bold">
+              <h3 className="text-2xl  relative mt-4 mx-auto max-w-[700px] bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 md:text-xl/relaxed  group-hover:underline
+               font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-500">
                 Landing con 3 vistas
               </h3>
               <img
@@ -63,7 +66,7 @@ const SeccionProyectos = () => {
                 src="/plantilla-alize-landing.png"
                 width="200"
               />
-              <p className="relative mb-10 text-white text-sm xl:text-lg font-bold">
+              <p className="relative mb-10 text-gray-300 lg:text-sm text-center font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-500">
                 "Alize viajes y turismo"
               </p>
             </div>
@@ -71,7 +74,8 @@ const SeccionProyectos = () => {
           <Link href="https://maquetado-sushi.vercel.app/" target='blank'>
             <div className="group flex flex-col p-4 border hover:border-none border-gray-200 shadow-sm bg-transparent transition-transform hover:scale-105 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-t from-blue-300 via-blue-800 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <h3 className="relative mt-4 mx-auto max-w-[700px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-white text-sm group-hover:underline font-bold">
+              <h3 className="text-2xl  relative mt-4 mx-auto max-w-[700px] bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 md:text-xl/relaxed  group-hover:underline
+               font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-500">
                 Diseño Web
               </h3>
               <img
@@ -81,7 +85,7 @@ const SeccionProyectos = () => {
                 src="/plantilla-sushi.png"
                 width="200"
               />
-              <p className="relative mb-10 text-white text-sm xl:text-lg font-bold">
+              <p className="relative mb-10 text-gray-300 lg:text-sm text-center font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-500">
                 "Sushi"
               </p>
             </div>
@@ -89,8 +93,9 @@ const SeccionProyectos = () => {
           <Link href="https://esi-dashboard-ten.vercel.app/login" target='blank'>
             <div className="group flex flex-col p-4 border hover:border-none border-gray-200 shadow-sm bg-transparent transition-transform hover:scale-105 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-t from-gray-800 via-gray-300 to-gray opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <h3 className="relative mt-4 mx-auto max-w-[700px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-white text-sm group-hover:underline font-bold">
-                Programa Personalizado
+              <h3 className="text-2xl  relative mt-4 mx-auto max-w-[700px] bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 md:text-xl/relaxed  group-hover:underline
+               font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-500">
+               Programa Personalizado
               </h3>
               <img
                 alt="Template 1"
@@ -99,7 +104,7 @@ const SeccionProyectos = () => {
                 src="/Programa-Institucion-Educativa.png"
                 width="200"
               />
-              <p className="relative mb-10 text-white text-sm xl:text-lg font-bold">
+              <p className="relative mb-10 text-gray-300 lg:text-sm text-center font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-500">
                 "New English School"
               </p>
             </div>
@@ -107,8 +112,9 @@ const SeccionProyectos = () => {
           <Link href="https://www.lacocinadeedu.com.ar/" target='blank'>
             <div className="group flex flex-col p-4 border hover:border-none border-gray-200 shadow-sm bg-transparent transition-transform hover:scale-105 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-t from-orange-800 via-orange-300 to-gray opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <h3 className="relative mt-4 mx-auto max-w-[700px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-white text-sm group-hover:underline font-bold">
-                Landing con 3 vistas
+              <h3 className="text-2xl  relative mt-4 mx-auto max-w-[700px] bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 md:text-xl/relaxed  group-hover:underline
+               font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-500">
+               Landing con 3 vistas
               </h3>
               <img
                 alt="Template 1"
@@ -117,7 +123,7 @@ const SeccionProyectos = () => {
                 src="/plantilla-edu.png"
                 width="200"
               />
-              <p className="relative mb-10 text-white text-sm xl:text-lg font-bold">
+              <p className="relative mb-10 text-gray-300 lg:text-sm text-center font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-500">
                 "La Cocina de Edu"
               </p>
             </div>

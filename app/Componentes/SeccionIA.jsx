@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -6,14 +7,13 @@ export const SeccionAnalisisMercado = () => {
     <section className="w-full justify-center flex">
       <div className="lg:flex max-w-7xl mb-20 gap-5 ">
         <div className=" text-center flex flex-col justify-center w-full mb-10">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-10">
+          <h1 className="justify-center text-center flex  font-bold tracking-tighter text-3xl xl:text-5xl/none bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-8">
             Analisis de mercado
           </h1>
           <p className="mx-auto max-w-[700px] text-gray-300 md:text-lg mb-10">
-            Descubre a fondo el análisis de mercado más crucial para potenciar tu empresa.
-            Sumérgete en una exploración detallada de las herramientas de vanguardia, procedimientos avanzados, tecnologías de punta y todo lo relevante en este campo.
-            Obtén información actualizada sobre las últimas tendencias y prácticas para asegurar que estás utilizando las mejores estrategias para el crecimiento de tu negocio.
-            ¡Eleva tu comprensión del análisis de mercado y posiciona tu empresa en la vanguardia de la competencia!
+            Explora el análisis de mercado clave para impulsar tu empresa, descubriendo herramientas avanzadas, procedimientos modernos, y tecnologías innovadoras.
+            Mantente al tanto de las últimas tendencias y mejores prácticas para aplicar las estrategias más efectivas y lograr un crecimiento competitivo.
+            ¡Mejora tu comprensión del análisis de mercado y posiciona tu negocio a la cabeza de la competencia!
           </p>
           <Link href='IA'>
             <div className="flex justify-center text-center">
@@ -26,16 +26,14 @@ export const SeccionAnalisisMercado = () => {
         <div className="w-full">
           <main className="flex flex-col items-center justify-center flex-1 w-full">
             <div className="w-full p-3 rounded-md shadow-md bg-[#0E0F18] ">
-              <img
-                alt="Blog cover"
-                className="w-full h-64 rounded-md object-cover"
-                height={300}
+              <Image
+                alt="Image Description"
+                className="rounded-md transform transition-all duration-500 ease-in-out group-hover:scale-90 z-0 mb-5"
                 src="/IA.jpg"
-                style={{
-                  aspectRatio: "500/300",
-                  objectFit: "cover",
-                }}
-                width={500}
+                layout="responsive"
+                width="50"
+                height="50"
+               
               />
               <div className="mt-2">
                 <Link
@@ -54,7 +52,7 @@ export const SeccionAnalisisMercado = () => {
                   Leer mas
                 </Link>
                 <div className="flex items-center">
-                  <span className="mx-1 text-xs text-gray-600 dark:text-gray-300">Jun 1, 2023</span>
+                  <span className="mx-1 text-xs text-gray-600 dark:text-gray-300">Jun 1, 2024</span>
                 </div>
               </div>
             </div>
