@@ -1,9 +1,11 @@
+'use client'
+
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
 import { IoMdAdd } from "react-icons/io";
 import { FaHashtag } from "react-icons/fa";
 
-const Precios = () => {
+const page = () => {
   return (
     <section className='w-full text-white transition-all ease-in-out duration-500'>
       <section className='pt-32 pb-10 md:pt-36 lg:pt-40 xl:pt-44 transition-all ease-in-out duration-500 max-w-7xl mx-auto text-center'>
@@ -33,20 +35,27 @@ const Precios = () => {
 
       <section className='mx-auto text-center mb-20'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-[var(--primary-color)] py-12'>
-          <div className='lg:text-center'>
+          <div className='lg:text-center mb-10'>
             <h2 className='text-base text-[var(--secondary-color)] font-semibold tracking-wide uppercase'>
               Precios
             </h2>
             <p className='mt-2 text-3xl leading-8 font-bold tracking-tighter bg-clip-tex sm:text-4xl'>
-              Desarrollo Web
+              Desarrollo de software
             </p>
             <p className='mt-4 max-w-2xl mx-auto text-xl text-gray-500 lg:mx-auto font-bold'>
-              Selecciona el plan que mejor se adapte a tus necesidades, desde
-              una página sencilla hasta un comercio electrónico. Si decides
-              adquirir el plan de diseño junto con otro plan de página web, te
+              Selecciona la opcion que mejor se adapte a tus necesidades, desde
+              una página sencilla hasta un sistema complejo. Si decides
+              adquirir la opcion de un diseño junto con el desarrollo del mismo, te
               ofrecemos un precio único.
             </p>
           </div>
+          <p className='mt-2 text-3xl leading-8 font-bold tracking-tighter bg-clip-tex sm:text-4xl'>
+            Tipos de desarrollos
+          </p>
+          <p className='mt-4 max-w-2xl mx-auto text-xl text-gray-500 lg:mx-auto font-bold'>
+            Nuestros precios se adaptan a las necesidades de cada proyecto, garantizando siempre soluciones personalizadas y ajustadas a tus objetivos.
+            Para brindarte mayor claridad, te presentamos a continuación un rango de precios transparente que refleja la calidad y flexibilidad de nuestros servicios.
+          </p>
           <div className='mt-10 pb-12 bg-[var(--primary-color)] sm:pb-16 '>
             <div className='relative'>
               <div className='absolute inset-0 h-1/2 ' />
@@ -54,93 +63,24 @@ const Precios = () => {
                 <div className='max-w-md mx-auto lg:max-w-5xl lg:grid lg:grid-cols-3 lg:gap-8'>
                   <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
                     <div>
-                      <h2 className='text-lg leading-6 font-medium'>
-                        Diseño Web
+                      <h2 className='text-3xl font-medium mb-5'>
+                        Pagina Web Simple
                       </h2>
-                      <p className='mt-2 text-gray-500 text-sm'>
-                        Diseñamos desde 0 tu sitio web o podes elegir una de
-                        nuestras plantillas que más se adapte a lo que buscas,
-                        lo tomamos como ejemplo y diseñamos a tu manera.
-                      </p>
-                      <div>
-                        <p className='mt-3 text-2xl text-green-500 font-bold'>
-                          USD $500
-                        </p>
-                        <p className='mt-3 text-2xl text-green-500 font-bold'>
-                          ARS $300.000
-                        </p>
-                      </div>
-                      <p className='mt-4 text-sm text-gray-500 dark:text-gray-400'>
-                        Gratis para siempre.
-                      </p>
-                    </div>
-                    <ul className='mt-6 space-y-4'>
-                      <li className='flex items-start'>
-                        <div className='flex-shrink-0'>
-                          <FaCheck className='h-6 w-6 text-green-500' />
-                        </div>
-                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          Prototipo y presentacion en figma.
-                        </p>
-                      </li>
-                      <li className='flex items-start'>
-                        <div className='flex-shrink-0'>
-                          <FaCheck className='h-6 w-6 text-green-500' />
-                        </div>
-                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          Diseño a medida.
-                        </p>
-                      </li>
-                      <li className='flex items-start'>
-                        <div className='flex-shrink-0'>
-                          <FaCheck className='h-6 w-6 text-green-500' />
-                        </div>
-                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          Tiempo estimado de entrega 3 meses.
-                        </p>
-                      </li>
-                    </ul>
-                    <div>
-                      <Link href=''>
-                        <div className='mt-6 bg-transparent border cursor-pointer'>
-                          <button className='text-white font-bold py-2 text-[20px]'>
-                            Ver ejemplo
-                          </button>
-                        </div>
-                      </Link>
-                      <Link
-                        target='blank'
-                        href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
-                      >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
-                          <button className='font-bold py-2 text-[20px]'>
-                            Contratar
-                          </button>
-                        </div>
-                      </Link>
-                    </div>
-                  </div>
-
-                  <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
-                    <div>
-                      <h2 className='text-lg leading-6 font-medium'>
-                        Landing Page
-                      </h2>
-                      <p className='mt-2 text-gray-500 text-sm'>
-                        Página de una sola vista. Ideal para perfiles digitales,
-                        empresas que estan iniciando, empresas chicas y
+                      <p className='mt-2 text-gray-500 text-sm mb-5' >
+                        Pagina de una sola vista, ideal para perfiles digitales,
+                        empresas que estan iniciando, blogs y
                         portafolios.
                       </p>
-                      <div>
+                      <div className="mb-5">
                         <p className='mt-3 text-2xl text-green-500 font-bold'>
-                          USD $100
+                          Desde $300 USD
                         </p>
                         <p className='mt-3 text-2xl text-green-500 font-bold'>
-                          ARS $60.000
+                          Hasta $1000 USD
                         </p>
                       </div>
-                      <p className='mt-4 text-sm text-gray-500 dark:text-gray-400'>
-                        Soporte gratuito por un año.
+                      <p className='mb-5 text-sm text-gray-500 dark:text-gray-400 '>
+                        Mantenimiento gratuito por 3 meses
                       </p>
                     </div>
                     <ul className='mt-6 space-y-4'>
@@ -149,7 +89,7 @@ const Precios = () => {
                           <FaCheck className='h-6 w-6 text-green-500' />
                         </div>
                         <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          Página de una sola vista.
+                          Una sola vista.
                         </p>
                       </li>
                       <li className='flex items-start'>
@@ -165,7 +105,7 @@ const Precios = () => {
                           <FaCheck className='h-6 w-6 text-green-500' />
                         </div>
                         <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          Integración con redes sociales más ícono de whatsapp.
+                          Integración con redes sociales y whatsapp.
                         </p>
                       </li>
                       <li className='flex items-start'>
@@ -173,7 +113,15 @@ const Precios = () => {
                           <FaCheck className='h-6 w-6 text-green-500' />
                         </div>
                         <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          Tiempo estimado de entrega 2 semanas.
+                          Hasta 5 imagenes y 2 videos.
+                        </p>
+                      </li>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <FaCheck className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Tiempo estimado de entrega 1 mes.
                         </p>
                       </li>
                     </ul>
@@ -200,33 +148,33 @@ const Precios = () => {
 
                   <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
                     <div>
-                      <h2 className='text-lg leading-6 font-medium'>
-                        Web Personalizada
+                      <h2 className='text-3xl font-medium mb-5'>
+                        Pagina Web Avanzada
                       </h2>
                       <p className='mt-2 text-gray-500 text-sm'>
-                        Si sos una empresa con experiencia (entre 1 a 3 años de
-                        servicio) que quiera ingresar al ámbito tecnológico esta
-                        es tu opción.
+                        Pagina de 3 a 10 vistas o mas con posibilidad a sub-pestañas de acceso.
+                        Si empezaste con tu emprendimiento, ofreces varios servicios o sos una empresa
+                        chica/mediana esta opcion es la que te conviene.
                       </p>
                       <div>
                         <p className='mt-3 text-2xl text-green-500 font-bold'>
-                          USD $300
+                          Desde $1500 USD
                         </p>
                         <p className='mt-3 text-2xl text-green-500 font-bold'>
-                          ARS $120.000
+                          Hasta $8000 USD
                         </p>
                       </div>
                       <p className='mt-4 text-sm text-gray-500 dark:text-gray-400'>
-                        Lo pagas una sola vez.
+                        Mantenimiento gratuito por 5 meses
                       </p>
                     </div>
                     <ul className='mt-6 space-y-4'>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
-                          <FaCheck className='h-6 w-6 text-green-500' />
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
                         <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          Incluye todo lo de la "Landing Page".
+                          De 3 a 10 vistas.
                         </p>
                       </li>
                       <li className='flex items-start'>
@@ -234,7 +182,7 @@ const Precios = () => {
                           <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
                         <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          De 1 a 5 páginas navegables.
+                          Boton de menu para navegar entre vistas.
                         </p>
                       </li>
                       <li className='flex items-start'>
@@ -250,7 +198,7 @@ const Precios = () => {
                           <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
                         <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          Formulario email.
+                          Envio de correos.
                         </p>
                       </li>
                       <li className='flex items-start'>
@@ -258,7 +206,15 @@ const Precios = () => {
                           <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
                         <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          Tiempo de entrega estimada 1 mes.
+                          Caracteristicas personalizadas.
+                        </p>
+                      </li>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Tiempo de entrega estimada, entre 2 a 6 meses.
                         </p>
                       </li>
                     </ul>
@@ -283,37 +239,34 @@ const Precios = () => {
                     </div>
                   </div>
 
-                  <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
+                  <div className='border hover:shadow-lg hover:shadow-white p-4  lg:mb-0 flex flex-col justify-between'>
                     <div>
-                      <h2 className='text-lg leading-6 font-medium'>
-                        Web Avanzada
+                      <h2 className='text-3xl font-medium mb-5'>
+                        Aplicaciones moviles Android/IOS
                       </h2>
                       <p className='mt-2 text-gray-500 text-sm'>
-                        Empresas grandes (mas de 20 empleados), plataformas con
-                        comercio electronico, sitio de comunidades,
-                        instituciones educativas, medios de comunicacion y
-                        entretenimiento, entre otros. Estas son algunas de las
-                        instituciones a las cuales podria interesarle
+                        Si buscas llevar tu negocio al siguiente nivel y conectar directamente con tus clientes desde sus dispositivos móviles,
+                        ya sea para ofrecer servicios, mejorar la experiencia del usuario o expandir tu presencia digital, esta es tu opcion.
                       </p>
                       <div>
                         <p className='mt-3 text-2xl text-green-500 font-bold'>
-                          USD $600
+                          Desde $3000 USD
                         </p>
                         <p className='mt-3 text-2xl text-green-500 font-bold'>
-                          ARS $200.000
+                          Hasta $10000 USD
                         </p>
                       </div>
                       <p className='mt-4 text-sm text-gray-500 dark:text-gray-400'>
-                        .
+                        Mantenimiento gratuito por 6 meses
                       </p>
                     </div>
-                    <ul className='mt-6 space-y-4'>
+                    <ul className='space-y-4'>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
-                          <FaCheck className='h-6 w-6 text-green-500' />
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
                         <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          Incluye todo lo de la "Web Personalizada".
+                          Seccion de carrito de compra.
                         </p>
                       </li>
                       <li className='flex items-start'>
@@ -321,7 +274,7 @@ const Precios = () => {
                           <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
                         <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          De 1 a 10 páginas navegables.
+                          Sistema de administracion para los productos.
                         </p>
                       </li>
                       <li className='flex items-start'>
@@ -337,7 +290,154 @@ const Precios = () => {
                           <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
                         <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          Tiempo estimado de entrega 2 meses.
+                          Tiempo estimado de entrega a definir.
+                        </p>
+                      </li>
+                    </ul>
+                    <div>
+                      <Link href=''>
+                        <div className='mt-6 bg-transparent border cursor-pointer'>
+                          <button className='text-white font-bold py-2 text-[20px]'>
+                            Ver ejemplo
+                          </button>
+                        </div>
+                      </Link>
+                      <Link
+                        target='blank'
+                        href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
+                      >
+                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
+                          <button className='font-bold py-2 text-[20px]'>
+                            Contratar
+                          </button>
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+
+                  <div className='border hover:shadow-lg hover:shadow-white p-4  lg:mb-0 flex flex-col justify-between'>
+                    <div>
+                      <h2 className='text-3xl font-medium mb-5'>
+                        Aplicaciones de escritorio
+                      </h2>
+                      <p className='mt-2 text-gray-500 text-sm'>
+                        Si ya tenes tu emprendimiento y queres aumentar tus ganancias
+                        o inclusive facilitarlas, necesitas un comercio electronico.
+                      </p>
+                      <div>
+                        <p className='mt-3 text-2xl text-green-500 font-bold'>
+                          Consultar costo
+                        </p>
+                      </div>
+                      <p className='mt-4 text-sm text-gray-500 dark:text-gray-400'>
+                        Mantenimiento gratuito por 6 meses
+                      </p>
+                    </div>
+                    <ul className='space-y-4'>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Seccion de carrito de compra.
+                        </p>
+                      </li>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Sistema de administracion para los productos.
+                        </p>
+                      </li>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Sistema de Login.
+                        </p>
+                      </li>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Tiempo estimado de entrega a definir.
+                        </p>
+                      </li>
+                    </ul>
+                    <div>
+                      <Link href=''>
+                        <div className='mt-6 bg-transparent border cursor-pointer'>
+                          <button className='text-white font-bold py-2 text-[20px]'>
+                            Ver ejemplo
+                          </button>
+                        </div>
+                      </Link>
+                      <Link
+                        target='blank'
+                        href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
+                      >
+                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
+                          <button className='font-bold py-2 text-[20px]'>
+                            Contratar
+                          </button>
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+
+
+                  <div className='border hover:shadow-lg hover:shadow-white p-4  lg:mb-0 flex flex-col justify-between'>
+                    <div>
+                      <h2 className='text-3xl font-medium mb-5'>
+                        Comercio electronico
+                      </h2>
+                      <p className='mt-2 text-gray-500 text-sm'>
+                        Si ya tenes tu emprendimiento y queres aumentar tus ganancias
+                        o inclusive facilitarlas, necesitas un comercio electronico.
+                      </p>
+                      <div>
+                        <p className='mt-3 text-2xl text-green-500 font-bold'>
+                          Consultar costo
+                        </p>
+                      </div>
+                      <p className='mt-4 text-sm text-gray-500 dark:text-gray-400'>
+                        Mantenimiento gratuito por 6 meses
+                      </p>
+                    </div>
+                    <ul className='space-y-4'>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Seccion de carrito de compra.
+                        </p>
+                      </li>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Sistema de administracion para los productos.
+                        </p>
+                      </li>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Sistema de Login.
+                        </p>
+                      </li>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Tiempo estimado de entrega a definir.
                         </p>
                       </li>
                     </ul>
@@ -364,36 +464,29 @@ const Precios = () => {
 
                   <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
                     <div>
-                      <h2 className='text-lg leading-6 font-medium'>
-                        Tienda Online
+                      <h2 className='text-3xl font-medium mb-5'>
+                        Software personalizado
                       </h2>
                       <p className='mt-2 text-gray-500 text-sm'>
-                        Esta opcion es para ti si sos: emprendedor, empresa
-                        fisica con un buen volumen de empleados, profesionales
-                        de las distintas areas (artistas, entrenadores,
-                        profesionales de la salud, psicologos, consultores,
-                        entre otros).
+                        Sabemos que a veces necesitas algo único que te diferncie del resto.
+                        Si buscas una solución específica para tu emprendimiento, esta es la opción correcta.
                       </p>
                       <div>
                         <p className='mt-3 text-2xl text-green-500 font-bold'>
-                          USD $1000
-                        </p>
-                        <p className='mt-3 text-2xl text-green-500 font-bold'>
-                          ARS $300.000
+                          Consultar costo
                         </p>
                       </div>
                       <p className='mt-4 text-sm text-gray-500 dark:text-gray-400'>
-                        Vende lo que necesites a traves de la web.
+                        Mantenimiento gratuito por 5 meses.
                       </p>
                     </div>
                     <ul className='mt-6 space-y-4'>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
-                          <FaCheck className='h-6 w-6 text-green-500' />
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
                         <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          Incluye todo lo de la "Web Personalizada", menos el
-                          tiempo de entrega.
+                          Desarrollo a medida.
                         </p>
                       </li>
                       <li className='flex items-start'>
@@ -401,7 +494,7 @@ const Precios = () => {
                           <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
                         <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          Hasta 15 paginas navegables.
+                          Investigacion minima de mercado.
                         </p>
                       </li>
                       <li className='flex items-start'>
@@ -409,7 +502,7 @@ const Precios = () => {
                           <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
                         <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          Panel de Administracion.
+                          Capacitacion a ti o tu equipo sobre el funcionamiento.
                         </p>
                       </li>
                       <li className='flex items-start'>
@@ -417,7 +510,15 @@ const Precios = () => {
                           <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
                         <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
-                          Tiempo estimado de entrega de 3 a 6 meses.
+                          Integracion a otros sistemas.
+                        </p>
+                      </li>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Tiempo estimado de entrega a definir.
                         </p>
                       </li>
                     </ul>
@@ -821,4 +922,4 @@ const Precios = () => {
   );
 };
 
-export default Precios;
+export default page;
