@@ -37,10 +37,10 @@ const HeaderComponent = () => {
               <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="Marca">
                Marca
               </Link>
-              <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="Plantillas">
+              <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="Proyectos">
                 Proyectos
               </Link>
-              <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="IA">
+              <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="AnalisisDeMercado">
                 Analisis de mercado
               </Link>
               <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="Nosotros">
