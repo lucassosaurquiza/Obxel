@@ -9,9 +9,6 @@ import { IoMdHappy } from "react-icons/io";
 const page = () => {
   return (
     <>
-      {/*  <div className="flex justify-center items-center mt-28 mb-28">
-        <img className="h-90 w-72 bg-transparent" src="mantenimiento.png" alt="" />
-      </div>*/}
       <section className='w-full text-white transition-all ease-in-out duration-500'>
         <section className='pt-32 pb-10 md:pt-36 lg:pt-40 xl:pt-44 transition-all ease-in-out duration-500 max-w-7xl mx-auto text-center'>
           <div className='md:flex  px-4 md:px-6 text-center gap-10 md:justify-center'>
