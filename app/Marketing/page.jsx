@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import { FaHashtag } from "react-icons/fa";
@@ -54,39 +55,39 @@ const page = () => {
               SEO.
             </p>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center align-middle p-6'>
-              <div className='p-6 flex items-center align-center flex-col border hover:shadow-white hover:shadow-md'>
+              <div className='h-full p-6 flex items-center align-center flex-col border hover:shadow-white hover:shadow-md'>
                 <GrAnalytics className='h-10 w-10 text-green-500' />
                 <h3 className='text-lg leading-6 font-medium'>Analítica</h3>
-                <p className='max-w-[200px] mt-2 text-gray-500 text-sm'>
+                <p className='mt-2 text-gray-500 text-sm'>
                   Obtén valiosos insights sobre tu audiencia y optimizá tus
                   esfuerzos de marketing.
                 </p>
               </div>
 
-              <div className='p-6 flex items-center align-center flex-col border hover:shadow-white hover:shadow-md'>
+              <div className='h-full p-6 flex items-center align-center flex-col border hover:shadow-white hover:shadow-md'>
                 <IoMegaphoneOutline className='h-10 w-10 text-green-500' />
                 <h3 className='text-lg leading-6 font-medium'>Publicidad</h3>
-                <p className='max-w-[200px] mt-2 text-gray-500 text-sm'>
+                <p className='mt-2 text-gray-500 text-sm'>
                   Alcanza a tu público objetivo a través de campañas
                   publicitarias estratégicas.
                 </p>
               </div>
 
-              <div className='p-6 flex items-center align-center flex-col border hover:shadow-white hover:shadow-md'>
+              <div className='h- full p-6 flex items-center align-center flex-col border hover:shadow-white hover:shadow-md'>
                 <MdOutlineDesignServices className='h-10 w-10 text-green-500' />
                 <h3 className='text-lg leading-6 font-medium'>
                   Creación de Contenido
                 </h3>
-                <p className='max-w-[200px] mt-2 text-gray-500 text-sm'>
+                <p className='mt-2 text-gray-500 text-sm'>
                   Involucra a tu audiencia con contenido atractivo y de alta
                   calidad.
                 </p>
               </div>
 
-              <div className='p-6 flex items-center align-center flex-col border hover:shadow-white hover:shadow-md'>
+              <div className='h-full p-6 flex items-center align-center flex-col border hover:shadow-white hover:shadow-md'>
                 <LuSearchCheck className='h-10 w-10 text-green-500' />
                 <h3 className='text-lg leading-6 font-medium'>SEO</h3>
-                <p className='max-w-[200px] mt-2 text-gray-500 text-sm'>
+                <p className='mt-2 text-gray-500 text-sm'>
                   Optimiza tu presencia en línea y genera más tráfico orgánico.
                 </p>
               </div>
