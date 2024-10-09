@@ -6,8 +6,8 @@ import { MdBrandingWatermark } from 'react-icons/md'
 
 export const SeccionPrecios = () => {
   return (
-    <section className="w-full items-center flex justify-center pb-10">
-      <div className="md:flex max-w-7xl gap-5 mb-10 p-3">
+    <section className="w-full items-center flex justify-center pb-10 px-3">
+      <div className="md:flex max-w-7xl gap-5 mb-10 ">
         <div className="w-full p-1 md:p-5 rounded-md mb-5 md:mb-0 " style={{ background: 'linear-gradient(to right,#004B3A, #4ED09E )' }}>
           <div className="flex items-center justify-around space-x-4 mb-8">
             <h2 className="md:text-3xl text-2xl text-gray-300 font-bold text-center">

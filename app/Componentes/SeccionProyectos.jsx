@@ -2,15 +2,13 @@ import Link from 'next/link'
 
 const SeccionProyectos = () => {
   return (
-    <section className="w-full pb-10">
+    <section className="w-full pb-10 px-3">
       <div className="grid gap-4 text-center lg:gap-10 lg:px-8 xl:px-16">
         <div className="space-y-3 mb-10">
-          <h2 className="justify-center text-center flex  font-bold tracking-tighter text-3xl xl:text-5xl/none bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-8">Proyectos</h2>
+          <h2 className="justify-center text-center flex  font-bold tracking-tighter lg:h-20 text-4xl lg:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-8">Proyectos</h2>
           <p className="text-gray-300 lg:text-xl text-center font-bold ">
-            ¿No sabes como diseñar tu web?
-          </p>
-          <p className="text-gray-400 lg:text-xl text-center font-bold ">
-            Elegi una, nosotros nos encargamos del resto.
+            Generalmente, sabemos lo que queremos, pero no siempre cómo construirlo. En Obxel, te hacemos todo más sencillo.
+            Explora nuestro catálogo de proyectos realizados y elige el que mejor se alinee con tu visión.
           </p>
         </div>
         <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-8 lg:gap-12 mb-10">
@@ -95,7 +93,7 @@ const SeccionProyectos = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-gray-800 via-gray-300 to-gray opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <h3 className="text-2xl  relative mt-4 mx-auto max-w-[700px] bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 md:text-xl/relaxed  group-hover:underline
                font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-500">
-               Programa Personalizado
+                Programa Personalizado
               </h3>
               <img
                 alt="Template 1"
@@ -114,7 +112,7 @@ const SeccionProyectos = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-orange-800 via-orange-300 to-gray opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <h3 className="text-2xl  relative mt-4 mx-auto max-w-[700px] bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 md:text-xl/relaxed  group-hover:underline
                font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-500">
-               Landing con 3 vistas
+                Landing con 3 vistas
               </h3>
               <img
                 alt="Template 1"

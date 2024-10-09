@@ -4,16 +4,16 @@ import React from 'react'
 
 export const SeccionAnalisisMercado = () => {
   return (
-    <section className="w-full justify-center flex">
+    <section className="w-full justify-center flex px-3" >
       <div className="lg:flex max-w-7xl mb-20 gap-5 ">
         <div className=" text-center flex flex-col justify-center w-full mb-10">
-          <h1 className="justify-center text-center flex  font-bold tracking-tighter text-3xl xl:text-5xl/none bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-8">
-            Analisis de mercado
+          <h1 className="justify-center text-center flex  font-bold tracking-tighter text-4xl lg:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-8">
+          Análisis de mercado
           </h1>
-          <p className="mx-auto max-w-[700px] text-gray-300 md:text-lg mb-10">
-            Explora el análisis de mercado clave para impulsar tu empresa, descubriendo herramientas avanzadas, procedimientos modernos, y tecnologías innovadoras.
-            Mantente al tanto de las últimas tendencias y mejores prácticas para aplicar las estrategias más efectivas y lograr un crecimiento competitivo.
-            ¡Mejora tu comprensión del análisis de mercado y posiciona tu negocio a la cabeza de la competencia!
+          <p className="text-gray-300 lg:text-xl text-center font-bold mb-10">
+            En los últimos tiempos, las tendencias han cambiado rápidamente.
+            Si quieres mantenerte al día con lo que está sucediendo y descubrir hacia dónde debería dirigirse tu empresa, explora nuestro apartado de análisis de mercado.
+            Te proporcionamos información actualizada sobre las últimas tendencias tecnológicas, junto con consejos clave para que tomes decisiones informadas y estratégicas para tu negocio.
           </p>
           <Link href='IA'>
             <div className="flex justify-center text-center">
@@ -33,7 +33,7 @@ export const SeccionAnalisisMercado = () => {
                 layout="responsive"
                 width="50"
                 height="50"
-               
+
               />
               <div className="mt-2">
                 <Link

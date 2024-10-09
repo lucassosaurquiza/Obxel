@@ -9,12 +9,13 @@ import { FaPersonChalkboard } from 'react-icons/fa6';
 
 export const SeccionTuMarca = () => {
   return (
-    <section className="w-full  md:py-24 lg:py-24 pb-10 flex justify-center bg-gray-400">
+    <section className="w-full  md:py-24 lg:py-24 pb-10 flex justify-center bg-[#0E0F18] mb-16">
       <div className="container space-y-12 px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="mb-10 justify-center text-center flex  font-bold tracking-tighter text-3xl xl:text-5xl/none bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-500">Consejos de marca</h2>
-            <p className=" text-gray-300 lg:text-xl text-center font-bold ">
+            <h2 className="mb-5 mt-10 h-20 md:mt-0 text-4xl lg:text-5xl justify-center text-center flex  font-bold tracking-tighter  bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
+            Consejos de marca</h2>
+            <p className=" text-gray-300 text-lg text-center font-bold ">
               Obtenga asesoramiento de expertos sobre cómo construir una marca sólida para su negocio
             </p>
           </div>
@@ -23,7 +24,7 @@ export const SeccionTuMarca = () => {
           <div className="grid gap-1">
             <div className="flex items-center gap-4 mb-5 justify-center">
               <TbBrandCashapp className='h-10 w-10 text-4xl text-[#69E1B2]' />
-              <h3 className="font-bold tracking-tighter text-2xl xl:text-3xl/none bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-500">Identidad de Marca</h3>
+              <h3 className="font-bold tracking-tighter text-2xl xl:text-3xl/none bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-400">Identidad de Marca</h3>
             </div>
             <p className="text-gray-300 lg:text-xl text-center font-bold ">
               Desarrollar una identidad de marca fuerte y memorable para destacarse en el mercado.
@@ -32,7 +33,7 @@ export const SeccionTuMarca = () => {
           <div className="grid gap-1">
             <div className="flex items-center gap-4 mb-5 justify-center">
               <FaPersonChalkboard className='h-10 w-10 text-4xl text-[#69E1B2]' />
-              <h3 className="font-bold tracking-tighter text-2xl xl:text-3xl/none bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-500">Publico Objetivo</h3>
+              <h3 className="font-bold tracking-tighter text-2xl xl:text-3xl/none bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-400">Publico Objetivo</h3>
             </div>
             <p className="text-gray-300 lg:text-xl text-center font-bold ">
               Identifique su público objetivo y cree una marca que resuene con ellos.
@@ -41,16 +42,16 @@ export const SeccionTuMarca = () => {
           <div className="grid gap-1">
             <div className="flex items-center gap-4  mb-5 justify-center">
               <IoLogoDesignernews className='h-10 w-10 text-4xl text-[#69E1B2]' />
-              <h3 className="font-bold tracking-tighter text-2xl xl:text-3xl/none bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-500">Diseño Visual</h3>
+              <h3 className="font-bold tracking-tighter text-2xl xl:text-3xl/none bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-400">Diseño Visual</h3>
             </div>
             <p className="text-gray-300 lg:text-xl text-center font-bold ">
               Cree una marca visualmente atractiva con elementos de diseño consistentes.
             </p>
           </div>
           <div className="grid gap-1">
-            <div className="flex items-center gap-4  mb-5 justify-center">
+            <div className="flex items-center gap-4 mb-5 justify-center">
               <PiStrategy className='h-10 w-10 text-4xl text-[#69E1B2]' />
-              <h3 className="font-bold tracking-tighter text-2xl xl:text-3xl/none bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-500">Estrategia de Marketing</h3>
+              <h3 className="font-bold tracking-tighter text-2xl xl:text-3xl/none bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-400">Estrategia </h3>
             </div>
             <p className="text-gray-300 lg:text-xl text-center font-bold ">
               Desarrollar una estrategia de marketing integral para promocionar eficazmente su marca.
@@ -59,7 +60,7 @@ export const SeccionTuMarca = () => {
           <div className="grid gap-1">
             <div className="flex items-center gap-4 mb-5 justify-center">
               <RiSeoLine className='h-10 w-10 text-4xl text-[#69E1B2]' />
-              <h3 className="font-bold tracking-tighter text-2xl xl:text-3xl/none bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-500">Posicionamiento de marca</h3>
+              <h3 className="font-bold tracking-tighter text-2xl xl:text-3xl/none bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-400">Posicionamiento</h3>
             </div>
             <p className="text-gray-300 lg:text-xl text-center font-bold ">
               Posiciona tu marca de manera única en el mercado para diferenciarte de la competencia.
@@ -68,7 +69,7 @@ export const SeccionTuMarca = () => {
           <div className="grid gap-1">
             <div className="flex items-center gap-4 mb-5 justify-center">
               <FcStatistics className='h-10 w-10 text-4xl text-[#69E1B2]' />
-              <h3 className="font-bold tracking-tighter text-2xl xl:text-3xl/none bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-500">Crecimiento de la marca</h3>
+              <h3 className="font-bold tracking-tighter text-2xl xl:text-3xl/none bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-400">Crecimiento de la marca</h3>
             </div>
             <p className="text-gray-300 lg:text-xl text-center font-bold ">Desarrolla estrategias para hacer crecer y escalar tu marca a lo largo del tiempo.
             </p>

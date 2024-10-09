@@ -4,14 +4,14 @@ import React from 'react'
 
 export const SeccionInicio = () => {
   return (
-    <section className="w-full pb-10 md:py-16 xl:py-14 transition-all ease-in-out duration-500 flex  justify-center animate-slideInLeft">
+    <section className="w-full pb-10 md:py-16 xl:py-14 transition-all ease-in-out duration-500 flex  justify-center animate-slideInLeft px-3">
       <div className="md:flex  max-w-7xl gap-10">
-        <div className="mb-10 md:mb-0">
-          <h1 className="text-3xl font-bold tracking-tighter mb-12 lg:text-4xl bg-gradient-to-r from-emerald-500 via-emerald-300 to-emerald-400 text-transparent bg-clip-text items-center flex justify-center text-center">
-            Digitalizá tu negocio con nosotros...
+        <div className="w-full mt-10 md:mt-0 mb-10 md:mb-0">
+          <h1 className="w-full h-28 text-4xl lg:text-5xl font-bold tracking-tighter mb-5 bg-gradient-to-r from-emerald-500 via-emerald-300 to-emerald-400 text-transparent bg-clip-text  flex justify-center text-center">
+          Consultoría Tecnológica
           </h1>
           <p className="text-gray-300 lg:text-xl text-center font-bold mb-12">
-            Diseño Web - Desarrollo de software - Asesoramiento de Marca - Marketing digital - Posicionamiento web
+            Desarrollo de software - Diseño Web - Asesoramiento de Marca - Marketing digital 
           </p>
           <p className="text-3xl text-center mb-12 bg-gradient-to-r from-emerald-500 via-emerald-300 to-emerald-400 text-transparent bg-clip-text font-bold lg:text-4xl">
             Creá, personalizá, posicioná y competí en línea
@@ -25,7 +25,7 @@ export const SeccionInicio = () => {
           </div>
         </div>
         <div className=" w-full">
-          <h2 className="justify-center text-center flex text-lg font-bold tracking-tighter sm:text-xl xl:text-3xl/none bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5">Ultimo proyecto realizado</h2>
+          <h2 className="w-full h-28 justify-center text-center flex font-bold tracking-tighter  text-4xl lg:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5">Último software realizado</h2>
           <div className="">
             <div className="item uno">
               <div>
