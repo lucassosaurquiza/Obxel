@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
 import { IoMdAdd } from "react-icons/io";
 import { FaHashtag } from "react-icons/fa";
+import { BotonContratarDesarrollo } from "../Componentes/BotonContratarDesarrollo";
 
 const page = () => {
   return (
@@ -33,13 +34,13 @@ const page = () => {
         </div>
       </section>
 
-      <section className='mx-auto text-center mb-20'>
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-[var(--primary-color)] py-12'>
+      <section className='mx-auto text-center mb-20 bg-[var(--primary-color)]'>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  py-12'>
           <div className='lg:text-center mb-10'>
             <h2 className='text-base text-[var(--secondary-color)] font-semibold tracking-wide uppercase'>
               Precios
             </h2>
-            <p className='mt-2 text-3xl leading-8 font-bold tracking-tighter bg-clip-tex sm:text-4xl'>
+            <p className='mt-2 text-3xl lg:text-5xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500'>
               Desarrollo de software
             </p>
             <p className='mt-4 max-w-2xl mx-auto text-xl text-gray-500 lg:mx-auto font-bold'>
@@ -49,7 +50,7 @@ const page = () => {
               ofrecemos un precio único.
             </p>
           </div>
-          <p className='mt-2 text-3xl leading-8 font-bold tracking-tighter bg-clip-tex sm:text-4xl'>
+          <p className='mt-2 text-3xl lg:text-5xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500'>
             Tipos de desarrollos
           </p>
           <p className='mt-4 max-w-2xl mx-auto text-xl text-gray-500 lg:mx-auto font-bold'>
@@ -63,7 +64,7 @@ const page = () => {
                 <div className='max-w-md mx-auto lg:max-w-5xl lg:grid lg:grid-cols-3 lg:gap-8'>
                   <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
                     <div>
-                      <h2 className='text-3xl font-medium mb-5'>
+                      <h2 className='text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5'>
                         Pagina Web Simple
                       </h2>
                       <p className='mt-2 text-gray-500 text-sm mb-5' >
@@ -137,18 +138,14 @@ const page = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
-                          <button className='font-bold py-2 text-[20px]'>
-                            Contratar
-                          </button>
-                        </div>
+                        <BotonContratarDesarrollo />
                       </Link>
                     </div>
                   </div>
 
                   <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
                     <div>
-                      <h2 className='text-3xl font-medium mb-5'>
+                      <h2 className='text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5'>
                         Pagina Web Avanzada
                       </h2>
                       <p className='mt-2 text-gray-500 text-sm'>
@@ -230,18 +227,14 @@ const page = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
-                          <button className='font-bold py-2 text-[20px]'>
-                            Contratar
-                          </button>
-                        </div>
+                        <BotonContratarDesarrollo />
                       </Link>
                     </div>
                   </div>
 
-                  <div className='border hover:shadow-lg hover:shadow-white p-4  lg:mb-0 flex flex-col justify-between'>
+                  <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10  lg:mb-0 flex flex-col justify-between'>
                     <div>
-                      <h2 className='text-3xl font-medium mb-5'>
+                      <h2 className='text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5'>
                         Aplicaciones moviles Android/IOS
                       </h2>
                       <p className='mt-2 text-gray-500 text-sm'>
@@ -306,18 +299,14 @@ const page = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
-                          <button className='font-bold py-2 text-[20px]'>
-                            Contratar
-                          </button>
-                        </div>
+                        <BotonContratarDesarrollo />
                       </Link>
                     </div>
                   </div>
 
-                  <div className='border hover:shadow-lg hover:shadow-white p-4  lg:mb-0 flex flex-col justify-between'>
+                  <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10  lg:mb-0 flex flex-col justify-between'>
                     <div>
-                      <h2 className='text-3xl font-medium mb-5'>
+                      <h2 className='text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5'>
                         Aplicaciones de escritorio
                       </h2>
                       <p className='mt-2 text-gray-500 text-sm'>
@@ -379,19 +368,15 @@ const page = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
-                          <button className='font-bold py-2 text-[20px]'>
-                            Contratar
-                          </button>
-                        </div>
+                        <BotonContratarDesarrollo />
                       </Link>
                     </div>
                   </div>
 
 
-                  <div className='border hover:shadow-lg hover:shadow-white p-4  lg:mb-0 flex flex-col justify-between'>
+                  <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10  lg:mb-0 flex flex-col justify-between'>
                     <div>
-                      <h2 className='text-3xl font-medium mb-5'>
+                      <h2 className='text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5'>
                         Comercio electronico
                       </h2>
                       <p className='mt-2 text-gray-500 text-sm'>
@@ -453,18 +438,14 @@ const page = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
-                          <button className='font-bold py-2 text-[20px]'>
-                            Contratar
-                          </button>
-                        </div>
+                        <BotonContratarDesarrollo />
                       </Link>
                     </div>
                   </div>
 
                   <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
                     <div>
-                      <h2 className='text-3xl font-medium mb-5'>
+                      <h2 className='text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5'>
                         Software personalizado
                       </h2>
                       <p className='mt-2 text-gray-500 text-sm'>
@@ -534,11 +515,7 @@ const page = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
-                          <button className='font-bold py-2 text-[20px]'>
-                            Contratar
-                          </button>
-                        </div>
+                        <BotonContratarDesarrollo />
                       </Link>
                     </div>
                   </div>
@@ -548,7 +525,8 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className='py-12 bg-[var(--tertiary-color)] max-w-7xl mx-auto text-center mb-20'>
+
+      <section className='py-12 bg-[var(--tertiary-color)]  mx-auto text-center mb-20'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='lg:text-center'>
             <h2 className='text-base text-emerald-600 font-semibold tracking-wide uppercase'>
@@ -727,7 +705,7 @@ const page = () => {
         </div>
       </section>
 
-      <section className='py-12 mb-20 bg-[var(--primary-color)] max-w-7xl mx-auto text-center '>
+      <section className='py-12 mb-20 bg-[var(--primary-color)]  mx-auto text-center '>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='lg:text-center'>
             <h2 className='text-base text-emerald-600 font-semibold tracking-wide uppercase'>
