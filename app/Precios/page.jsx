@@ -5,6 +5,8 @@ import { FaCheck } from "react-icons/fa";
 import { IoMdAdd } from "react-icons/io";
 import { FaHashtag } from "react-icons/fa";
 import { BotonContratarDesarrollo } from "../Componentes/BotonContratarDesarrollo";
+import { BotonConsultarPlanes } from "../Componentes/BotonConsultarPlanes";
+import { BotonVerEjemplo } from "../Componentes/BotonVerEjemplo";
 
 const page = () => {
   return (
@@ -20,21 +22,12 @@ const page = () => {
               te brindamos soluciones a medida que se ajustan a tus necesidades
               y presupuesto.
             </p>
-            <Link
-              target='blank'
-              href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
-            >
-              <div className='flex items-center justify-center mt-3 h-16 px-4 bg-[--secondary-color] cursor-pointer hover:bg-[--secondary-color-light] active:bg-[--secondary-color-dark]'>
-                <button className='font-bold py-2 text-[20px] text-center lg:text-3xl'>
-                  Consultá nuestros planes
-                </button>
-              </div>
-            </Link>
+            <BotonConsultarPlanes />
           </div>
         </div>
       </section>
 
-      <section className='mx-auto text-center mb-20 bg-[var(--primary-color)]'>
+      <section className='mx-auto text-center mb-20 bg-gradient-to-r from-blue-950 to-[#0E0F18]'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  py-12'>
           <div className='lg:text-center mb-10'>
             <h2 className='text-base text-[var(--secondary-color)] font-semibold tracking-wide uppercase'>
@@ -57,12 +50,12 @@ const page = () => {
             Nuestros precios se adaptan a las necesidades de cada proyecto, garantizando siempre soluciones personalizadas y ajustadas a tus objetivos.
             Para brindarte mayor claridad, te presentamos a continuación un rango de precios transparente que refleja la calidad y flexibilidad de nuestros servicios.
           </p>
-          <div className='mt-10 pb-12 bg-[var(--primary-color)] sm:pb-16 '>
+          <div className='mt-10 pb-12  sm:pb-16 '>
             <div className='relative'>
               <div className='absolute inset-0 h-1/2 ' />
               <div className='relative max-w-7xl mx-auto sm:px-6 lg:px-8'>
                 <div className='max-w-md mx-auto lg:max-w-5xl lg:grid lg:grid-cols-3 lg:gap-8'>
-                  <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
+                  <div className=' shadow-lg shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
                     <div>
                       <h2 className='text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5'>
                         Pagina Web Simple
@@ -75,9 +68,6 @@ const page = () => {
                       <div className="mb-5">
                         <p className='mt-3 text-2xl text-green-500 font-bold'>
                           Desde $300 USD
-                        </p>
-                        <p className='mt-3 text-2xl text-green-500 font-bold'>
-                          Hasta $1000 USD
                         </p>
                       </div>
                       <p className='mb-5 text-sm text-gray-500 dark:text-gray-400 '>
@@ -127,13 +117,7 @@ const page = () => {
                       </li>
                     </ul>
                     <div>
-                      <Link href=''>
-                        <div className='mt-6 bg-transparent border cursor-pointer'>
-                          <button className='text-white font-bold py-2 text-[20px]'>
-                            Ver ejemplo
-                          </button>
-                        </div>
-                      </Link>
+                      <BotonVerEjemplo />
                       <Link
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
@@ -143,7 +127,7 @@ const page = () => {
                     </div>
                   </div>
 
-                  <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
+                  <div className=' shadow-lg shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
                     <div>
                       <h2 className='text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5'>
                         Pagina Web Avanzada
@@ -156,9 +140,6 @@ const page = () => {
                       <div>
                         <p className='mt-3 text-2xl text-green-500 font-bold'>
                           Desde $1500 USD
-                        </p>
-                        <p className='mt-3 text-2xl text-green-500 font-bold'>
-                          Hasta $8000 USD
                         </p>
                       </div>
                       <p className='mt-4 text-sm text-gray-500 dark:text-gray-400'>
@@ -216,13 +197,7 @@ const page = () => {
                       </li>
                     </ul>
                     <div>
-                      <Link href=''>
-                        <div className='mt-6 bg-transparent border cursor-pointer'>
-                          <button className='text-white font-bold py-2 text-[20px]'>
-                            Ver ejemplo
-                          </button>
-                        </div>
-                      </Link>
+                    <BotonVerEjemplo/>
                       <Link
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
@@ -232,7 +207,7 @@ const page = () => {
                     </div>
                   </div>
 
-                  <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10  lg:mb-0 flex flex-col justify-between'>
+                  <div className=' shadow-lg shadow-white p-4 mb-10  lg:mb-0 flex flex-col justify-between'>
                     <div>
                       <h2 className='text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5'>
                         Aplicaciones moviles Android/IOS
@@ -244,9 +219,6 @@ const page = () => {
                       <div>
                         <p className='mt-3 text-2xl text-green-500 font-bold'>
                           Desde $3000 USD
-                        </p>
-                        <p className='mt-3 text-2xl text-green-500 font-bold'>
-                          Hasta $10000 USD
                         </p>
                       </div>
                       <p className='mt-4 text-sm text-gray-500 dark:text-gray-400'>
@@ -288,13 +260,7 @@ const page = () => {
                       </li>
                     </ul>
                     <div>
-                      <Link href=''>
-                        <div className='mt-6 bg-transparent border cursor-pointer'>
-                          <button className='text-white font-bold py-2 text-[20px]'>
-                            Ver ejemplo
-                          </button>
-                        </div>
-                      </Link>
+                    <BotonVerEjemplo/>
                       <Link
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
@@ -304,7 +270,7 @@ const page = () => {
                     </div>
                   </div>
 
-                  <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10  lg:mb-0 flex flex-col justify-between'>
+                  <div className=' shadow-lg shadow-white p-4 mb-10  lg:mb-0 flex flex-col justify-between'>
                     <div>
                       <h2 className='text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5'>
                         Aplicaciones de escritorio
@@ -357,13 +323,7 @@ const page = () => {
                       </li>
                     </ul>
                     <div>
-                      <Link href=''>
-                        <div className='mt-6 bg-transparent border cursor-pointer'>
-                          <button className='text-white font-bold py-2 text-[20px]'>
-                            Ver ejemplo
-                          </button>
-                        </div>
-                      </Link>
+                    <BotonVerEjemplo/>
                       <Link
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
@@ -374,7 +334,7 @@ const page = () => {
                   </div>
 
 
-                  <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10  lg:mb-0 flex flex-col justify-between'>
+                  <div className=' shadow-lg shadow-white p-4 mb-10  lg:mb-0 flex flex-col justify-between'>
                     <div>
                       <h2 className='text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5'>
                         Comercio electronico
@@ -427,13 +387,7 @@ const page = () => {
                       </li>
                     </ul>
                     <div>
-                      <Link href=''>
-                        <div className='mt-6 bg-transparent border cursor-pointer'>
-                          <button className='text-white font-bold py-2 text-[20px]'>
-                            Ver ejemplo
-                          </button>
-                        </div>
-                      </Link>
+                    <BotonVerEjemplo/>
                       <Link
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
@@ -443,7 +397,7 @@ const page = () => {
                     </div>
                   </div>
 
-                  <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
+                  <div className=' shadow-lg shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
                     <div>
                       <h2 className='text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5'>
                         Software personalizado
@@ -504,13 +458,7 @@ const page = () => {
                       </li>
                     </ul>
                     <div>
-                      <Link href=''>
-                        <div className='mt-6 bg-transparent border cursor-pointer'>
-                          <button className='text-white font-bold py-2 text-[20px]'>
-                            Ver ejemplo
-                          </button>
-                        </div>
-                      </Link>
+                    <BotonVerEjemplo/>
                       <Link
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
@@ -526,16 +474,16 @@ const page = () => {
         </div>
       </section>
 
-      <section className='py-12 bg-[var(--tertiary-color)]  mx-auto text-center mb-20'>
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <section className='py-12  text-transparent bg-gradient-to-r from-white to-gray-500  mx-auto text-center mb-20'>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 '>
           <div className='lg:text-center'>
             <h2 className='text-base text-emerald-600 font-semibold tracking-wide uppercase'>
               Precios
             </h2>
-            <p className='mt-2 text-3xl leading-8 font-bold tracking-tighter bg-clip-text bg-gradient-to-r text-[var(--primary-color)] sm:text-4xl'>
+            <p className='mt-2 text-3xl lg:text-5xl font-bold tracking-tighter leading-8 bg-clip-text bg-gradient-to-r text-[#0E0F18] sm:text-4xl'>
               Marketing Digital
             </p>
-            <p className='mt-4 max-w-2xl mx-auto text-xl text-gray-500 lg:mx-auto font-bold'>
+            <p className='mt-4 max-w-2xl mx-auto text-xl text-[#0E0F18] lg:mx-auto font-bold'>
               Una vez que materialices tu visión digital, es fundamental darle
               visibilidad. Descubre nuestros paquetes de marketing diseñados
               para potenciar tu proyecto de manera significativa. ¡Haz que tu
@@ -543,23 +491,23 @@ const page = () => {
               estrategias especializadas!
             </p>
           </div>
-          <div className='mt-10 pb-12 bg-white sm:pb-16'>
+          <div className='mt-10 pb-12  sm:pb-16'>
             <div className='relative'>
-              <div className='absolute inset-0 h-1/2 bg-white' />
+              <div className='absolute inset-0 h-1/2 ' />
               <div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                 <div className='max-w-md mx-auto lg:max-w-5xl lg:grid lg:grid-cols-3 lg:gap-8'>
-                  <div className='border border-[var(--primary-color)] hover:shadow-lg hover:shadow-[--primary-color] p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
+                  <div className=' shadow-lg shadow-[--primary-color] p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
                     <div>
-                      <h2 className='text-lg leading-6 font-medium text-[var(--primary-color)]'>
+                      <h2 className=' leading-6  bg-clip-text text-transparent bg-gradient-to-r from-[#0e0f1852] to-[#0E0F18] text-3xl font-bold tracking-tighter '>
                         Basico
                       </h2>
-                      <p className='mt-2 text-sm text-gray-500'>
+                      <p className='mt-2 text-sm text-[#0E0F18] font-bold'>
                         Oferta basica para que pruebes nuestros servicios.
                       </p>
-                      <p className='mt-3 text-5xl font-bold text-green-500'>
-                        $5.000
+                      <p className='mt-3 text-2xl font-bold text-green-500'>
+                        Consultar costo
                       </p>
-                      <p className='mt-4 text-sm text-gray-500'>
+                      <p className='mt-4 text-sm text-[#0E0F18] font-bold'>
                         Se abona mensualmente.
                       </p>
                     </div>
@@ -568,16 +516,16 @@ const page = () => {
                         <div className='flex-shrink-0'>
                           <FaHashtag className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-left text-gray-500'>
-                          2 dias en la semana, 5 posteos en instagram.
+                        <p className='ml-3 text-left text-[#0E0F18] font-bold'>
+                          Gestión básica en redes sociales para aumentar visibilidad y engagement.
                         </p>
                       </li>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
                           <FaHashtag className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-left text-gray-500'>
-                          2 dias en la semana, 5 posteos en facebook.
+                        <p className='ml-3 text-left text-[#0E0F18] font-bold'>
+                          Analisis para posicionamiento SEO basico.
                         </p>
                       </li>
                     </ul>
@@ -586,28 +534,24 @@ const page = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
-                          <button className='font-bold py-2 text-[20px] text-[var(--primary-color)]'>
-                            Contratar
-                          </button>
-                        </div>
+                        <BotonContratarDesarrollo />
                       </Link>
                     </div>
                   </div>
 
-                  <div className='border border-[var(--primary-color)] hover:shadow-lg hover:shadow-[--primary-color] p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
+                  <div className=' shadow-lg shadow-[--primary-color] p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
                     <div>
-                      <h2 className='text-lg leading-6 font-medium text-[var(--primary-color)]'>
+                      <h2 className=' leading-6  bg-clip-text text-transparent bg-gradient-to-r from-[#0e0f1852] to-[#0E0F18] text-3xl font-bold tracking-tighter '>
                         Intermedio
                       </h2>
-                      <p className='mt-2 text-sm text-gray-500'>
+                      <p className='mt-2 text-sm text-[#0E0F18] font-bold'>
                         Investigacion y evaluacion sobre tu competencia actual
                         para posteriores estrategias de marketing.
                       </p>
-                      <p className='mt-3 text-5xl font-bold text-green-500'>
-                        $10.000
+                      <p className='mt-3 text-2xl font-bold text-green-500'>
+                        Consultar costo
                       </p>
-                      <p className='mt-4 text-sm text-gray-500'>
+                      <p className='mt-4 text-sm text-[#0E0F18] font-bold'>
                         Se abona mensualmente.
                       </p>
                     </div>
@@ -616,17 +560,16 @@ const page = () => {
                         <div className='flex-shrink-0'>
                           <FaHashtag className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-left text-gray-500'>
-                          Investigación continua de mercado y tendencias.
+                        <p className='ml-3 text-left text-[#0E0F18] font-bold'>
+                          Análisis detallado de tu competencia
                         </p>
                       </li>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
                           <FaHashtag className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-left text-gray-500'>
-                          Estrategias personalizadas basadas en análisis
-                          competitivo.
+                        <p className='ml-3 text-left text-[#0E0F18] font-bold'>
+                          Estrategias de marketing adaptadas y en constante evolución
                         </p>
                       </li>
                     </ul>
@@ -635,27 +578,23 @@ const page = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
-                          <button className='font-bold py-2 text-[20px] text-[var(--primary-color)]'>
-                            Contratar
-                          </button>
-                        </div>
+                        <BotonContratarDesarrollo />
                       </Link>
                     </div>
                   </div>
 
-                  <div className='border border-[var(--primary-color)] hover:shadow-lg hover:shadow-[--primary-color] p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
+                  <div className=' shadow-lg shadow-[--primary-color] p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
                     <div>
-                      <h2 className='text-lg leading-6 font-medium text-[var(--primary-color)]'>
+                      <h2 className=' leading-6  bg-clip-text text-transparent bg-gradient-to-r from-[#0e0f1852] to-[#0E0F18] text-3xl font-bold tracking-tighter '>
                         Avanzado
                       </h2>
-                      <p className='mt-2 text-sm text-gray-500'>
+                      <p className='mt-2 text-sm text-[#0E0F18] font-bold'>
                         Control total sobre sus redes sociales.
                       </p>
-                      <p className='mt-3 text-5xl font-bold text-green-500'>
-                        $15.000
+                      <p className='mt-3 text-2xl font-bold text-green-500'>
+                        Consultar costo
                       </p>
-                      <p className='mt-4 text-sm text-gray-500'>
+                      <p className='mt-4 text-sm text-[#0E0F18] font-bold'>
                         Se abona mensualmente.
                       </p>
                     </div>
@@ -664,24 +603,24 @@ const page = () => {
                         <div className='flex-shrink-0'>
                           <FaHashtag className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-left text-gray-500'>
-                          Contenido estratégico adaptado a tus necesidades.
+                        <p className='ml-3 text-left text-[#0E0F18] font-bold'>
+                          Gestión completa de todas tus plataformas sociales
                         </p>
                       </li>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
                           <FaHashtag className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-left text-gray-500'>
-                          Analítica avanzada de desempeño en redes sociales.
+                        <p className='ml-3 text-left text-[#0E0F18] font-bold'>
+                          Creación y publicación de contenido diseñado a medida para maximizar impacto
                         </p>
                       </li>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
                           <FaHashtag className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-left text-gray-500'>
-                          Soporte prioritario las 24/7.
+                        <p className='ml-3 text-left text-[#0E0F18] font-bold'>
+                          Análisis avanzado de métricas clave y ajustes estratégicos basados en datos
                         </p>
                       </li>
                     </ul>
@@ -690,11 +629,7 @@ const page = () => {
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
-                          <button className='font-bold py-2 text-[20px] text-[var(--primary-color)]'>
-                            Contratar
-                          </button>
-                        </div>
+                        <BotonContratarDesarrollo />
                       </Link>
                     </div>
                   </div>
@@ -705,188 +640,182 @@ const page = () => {
         </div>
       </section>
 
-      <section className='py-12 mb-20 bg-[var(--primary-color)]  mx-auto text-center '>
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-          <div className='lg:text-center'>
-            <h2 className='text-base text-emerald-600 font-semibold tracking-wide uppercase'>
+      <section className='mx-auto text-center mb-20 bg-gradient-to-r from-blue-950 to-[#0E0F18]'>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  py-12'>
+          <div className='lg:text-center mb-10'>
+            <h2 className='text-base text-[var(--secondary-color)] font-semibold tracking-wide uppercase'>
               Precios
             </h2>
-            <p className='mt-2 text-3xl leading-8 font-bold tracking-tighter bg-clip-text text-[var(--tertiary-color)] bg-gradient-to-r sm:text-4xl'>
-              Marca Personal
+            <p className='mt-2 h-16 text-3xl lg:text-5xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500'>
+              Diseño Digital
             </p>
-            <p className='mt-4 max-w-2xl mx-auto text-xl text-gray-500 lg:mx-auto font-bold'>
-              Si ya cuentas con algun empredimiento online sabras lo importante
-              que es tener presencia alli. Por ello te traemos asesoramiento
-              sobre tendencias y como se situa tu marca en el mercado.
+            <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500 lg:mx-auto font-bold">
+              Nuestro enfoque en diseño web está orientado a crear soluciones visuales que reflejen la esencia de tu marca.
+              Simplificamos el proceso para que obtengas un sitio web personalizado, funcional y listo para captar clientes desde el primer clic.
             </p>
           </div>
           <div className='mt-10 pb-12  sm:pb-16 '>
             <div className='relative'>
               <div className='absolute inset-0 h-1/2 ' />
-              <div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+              <div className='relative max-w-7xl mx-auto sm:px-6 lg:px-8'>
                 <div className='max-w-md mx-auto lg:max-w-5xl lg:grid lg:grid-cols-3 lg:gap-8'>
-                  <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
+                  <div className=' shadow-lg shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
                     <div>
-                      <h2 className='text-lg leading-6 font-medium text-[var(--tertiary-color)]'>
-                        Basico
+                      <h2 className='text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5'>
+                        Diseño Visual Básico
                       </h2>
-                      <p className='mt-2 text-sm text-gray-500'>
-                        Oferta basica para que pruebes nuestros servicios.
+                      <p className='mt-2 text-gray-500 text-sm mb-5' >
+                        Empieza con un diseño estético que cubre las bases de tu identidad visual. Ideal para quienes buscan una imagen profesional sencilla.
                       </p>
-                      <p className='mt-3 text-green-500 text-5xl font-bold '>
-                        $50.000
-                      </p>
-                      <p className='mt-4 text-sm text-gray-500'>
-                        Se abona mensualmente.
-                      </p>
+                      <div className="mb-5">
+                        <p className='mt-3 text-2xl text-green-500 font-bold'>
+                          Consultar costo
+                        </p>
+                      </div>
                     </div>
                     <ul className='mt-6 space-y-4'>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
-                          <FaHashtag className='h-6 w-6 text-green-500' />
+                          <FaCheck className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-base text-gray-500'>
-                          Analisis inicial basico.
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Diseño de gráficos y elementos visuales básicos
                         </p>
                       </li>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
-                          <FaHashtag className='h-6 w-6 text-green-500' />
+                          <FaCheck className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-left text-gray-500'>
-                          Fundamentos de la Marca Personal.
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Propuesta de colores y tipografías alineadas con tu marca
                         </p>
                       </li>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
-                          <FaHashtag className='h-6 w-6 text-green-500' />
+                          <FaCheck className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-left text-gray-500'>
-                          Optimización de Perfiles en Redes Sociales.
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Diseño adaptado para redes sociales
                         </p>
                       </li>
                     </ul>
                     <div>
+                    <BotonVerEjemplo/>
                       <Link
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
-                          <button className='font-bold py-2 text-[20px]'>
-                            Contratar
-                          </button>
-                        </div>
+                        <BotonContratarDesarrollo />
                       </Link>
                     </div>
                   </div>
 
-                  <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
+                  <div className=' shadow-lg shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
                     <div>
-                      <h2 className='text-lg leading-6 font-medium text-[var(--tertiary-color)]'>
-                        Intermedio
+                      <h2 className='text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5'>
+                        Diseño Gráfico Personalizado
                       </h2>
-                      <p className='mt-2 text-sm text-gray-500'>
-                        Investigacion y evaluacion sobre tu competencia actual
-                        para posteriores estrategias de marca.
+                      <p className='mt-2 text-gray-500 text-sm'>
+                        Eleva tu identidad visual con un diseño más completo y adaptado a las necesidades de tu marca.
                       </p>
-                      <p className='mt-3 text-green-500 text-5xl font-bold '>
-                        $100.000
-                      </p>
-                      <p className='mt-4 text-sm text-gray-500'>
-                        Se abona mensualmente.
-                      </p>
+                      <div>
+                        <p className='mt-3 text-2xl text-green-500 font-bold'>
+                          Consultar costo
+                        </p>
+                      </div>
                     </div>
                     <ul className='mt-6 space-y-4'>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
-                          <FaHashtag className='h-6 w-6 text-green-500' />
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-base text-gray-500'>
-                          Segmentación de Audiencia.
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Creación de un sistema gráfico coherente (logos, paletas de colores, tipografías)
                         </p>
                       </li>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
-                          <FaHashtag className='h-6 w-6 text-green-500' />
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-left text-gray-500'>
-                          Gestión de Reputación en Línea.
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Diseño de material promocional digital (banners, anuncios, etc.)
                         </p>
                       </li>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
-                          <FaHashtag className='h-6 w-6 text-green-500' />
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-left text-gray-500'>
-                          Networking Estratégico.
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Adaptaciones de diseño para múltiples plataformas y formatos (web, redes sociales, presentaciones)
                         </p>
                       </li>
                     </ul>
                     <div>
+                    <BotonVerEjemplo/>
                       <Link
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
-                          <button className='font-bold py-2 text-[20px]'>
-                            Contratar
-                          </button>
-                        </div>
+                        <BotonContratarDesarrollo />
                       </Link>
                     </div>
                   </div>
 
-                  <div className='border hover:shadow-lg hover:shadow-white p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
-                    <div>
-                      <h2 className='text-lg leading-6 font-medium text-[var(--tertiary-color)]'>
-                        Avanzado
+                  <div className=' shadow-lg shadow-white p-4 mb-10  lg:mb-0 flex flex-col justify-between'>
+                    <div className="mb-5">
+                      <h2 className='text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 mb-5'>
+                        Diseño Visual Integral y Estratégico
                       </h2>
-                      <p className='mt-2 text-sm text-gray-500'>
-                        Control total sobre su marca.
+                      <p className='mt-2 text-gray-500 text-sm'>
+                        Transforma la identidad de tu marca con un diseño visual integral, pensado estratégicamente para maximizar tu impacto en todos los canales.
                       </p>
-                      <p className='mt-3 text-green-500 text-5xl font-bold '>
-                        $150.000
-                      </p>
-                      <p className='mt-4 text-sm text-gray-500'>
-                        Se abona mensualmente.
-                      </p>
+                      <div>
+                        <p className='mt-3 text-2xl text-green-500 font-bold'>
+                          Consultar costo
+                        </p>
+                      </div>
                     </div>
-                    <ul className='mt-6 space-y-4'>
+                    <ul className='space-y-4'>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
-                          <FaHashtag className='h-6 w-6 text-green-500' />
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-base text-gray-500'>
-                          Estrategia de Marca Personal a Largo Plazo.
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Diseño completo de identidad visual (logos, gráficos, paletas, estilo visual)
                         </p>
                       </li>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
-                          <FaHashtag className='h-6 w-6 text-green-500' />
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-left text-gray-500'>
-                          Monetización de la Marca Personal.
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Material gráfico avanzado para campañas digitales y offline
                         </p>
                       </li>
                       <li className='flex items-start'>
                         <div className='flex-shrink-0'>
-                          <FaHashtag className='h-6 w-6 text-green-500' />
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
                         </div>
-                        <p className='ml-3 text-left text-gray-500'>
-                          Mentoría Personalizada.
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Estrategia visual para asegurar coherencia de marca en todas las plataformas
+                        </p>
+                      </li>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <IoMdAdd className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-gray-500 dark:text-gray-400'>
+                          Asesoría continua para optimización de tu imagen visual
                         </p>
                       </li>
                     </ul>
                     <div>
+                    <BotonVerEjemplo/>
                       <Link
                         target='blank'
                         href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
                       >
-                        <div className='mt-3 h-16 flex justify-center bg-green-500 hover:bg-green-300 active:bg-green-800 cursor-pointer'>
-                          <button className='font-bold py-2 text-[20px]'>
-                            Contratar
-                          </button>
-                        </div>
+                        <BotonContratarDesarrollo />
                       </Link>
                     </div>
                   </div>
@@ -896,6 +825,180 @@ const page = () => {
           </div>
         </div>
       </section>
+
+      <section className='py-12  text-transparent bg-gradient-to-r from-white to-gray-500  mx-auto text-center mb-20'>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 '>
+          <div className='lg:text-center'>
+            <h2 className='text-base text-emerald-600 font-semibold tracking-wide uppercase'>
+              Precios
+            </h2>
+            <p className='mt-2 text-3xl lg:text-5xl font-bold tracking-tighter leading-8 bg-clip-text bg-gradient-to-r text-[#0E0F18] sm:text-4xl'>
+              Marca Personal
+            </p>
+            <p className='mt-4 max-w-2xl mx-auto text-xl text-[#0E0F18] lg:mx-auto font-bold'>
+              Si ya cuentas con algun empredimiento online sabras lo importante
+              que es tener presencia alli. Por ello te traemos asesoramiento
+              sobre tendencias y como se situa tu marca en el mercado.
+            </p>
+          </div>
+          <div className='mt-10 pb-12  sm:pb-16'>
+            <div className='relative'>
+              <div className='absolute inset-0 h-1/2 ' />
+              <div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+                <div className='max-w-md mx-auto lg:max-w-5xl lg:grid lg:grid-cols-3 lg:gap-8'>
+                  <div className=' shadow-lg shadow-[--primary-color] p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
+                    <div>
+                      <h2 className=' leading-6 mb-5 bg-clip-text text-transparent bg-gradient-to-r from-[#0e0f1852] to-[#0E0F18] text-3xl font-bold tracking-tighter '>
+                        Identidad Personal
+                      </h2>
+                      <p className='mt-2 text-sm text-[#0E0F18] font-bold'>
+                        Creación de una identidad visual que refleje la personalidad y los valores de una persona, similar al branding de una empresa, pero centrado en individuos.
+                      </p>
+                      <p className='mt-3 text-2xl font-bold text-green-500'>
+                        Consultar costo
+                      </p>
+                      <p className='mt-4 text-sm text-[#0E0F18] font-bold'>
+                        Se abona mensualmente.
+                      </p>
+                    </div>
+                    <ul className='mt-6 space-y-4'>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <FaHashtag className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-[#0E0F18] font-bold'>
+                          Diseño de logotipo personal
+                        </p>
+                      </li>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <FaHashtag className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-[#0E0F18] font-bold'>
+                          Definición de paleta de colores y tipografías
+                        </p>
+                      </li>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <FaHashtag className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-[#0E0F18] font-bold'>
+                          Manual de estilo visual para su uso en redes sociales, sitios web, y material de presentación
+                        </p>
+                      </li>
+                    </ul>
+                    <div>
+                      <Link
+                        target='blank'
+                        href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
+                      >
+                        <BotonContratarDesarrollo />
+                      </Link>
+                    </div>
+                  </div>
+
+                  <div className=' shadow-lg shadow-[--primary-color] p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
+                    <div>
+                      <h2 className=' leading-6  mb-5 bg-clip-text text-transparent bg-gradient-to-r from-[#0e0f1852] to-[#0E0F18] text-3xl font-bold tracking-tighter '>
+                        Presentaciones Personales
+                      </h2>
+                      <p className='mt-2 text-sm text-[#0E0F18] font-bold'>
+                        Diseño visual de presentaciones para conferencias, reuniones, o eventos, donde la persona quiera destacar su marca personal.
+                      </p>
+                      <p className='mt-3 text-2xl font-bold text-green-500'>
+                        Consultar costo
+                      </p>
+                      <p className='mt-4 text-sm text-[#0E0F18] font-bold'>
+                        Se abona mensualmente.
+                      </p>
+                    </div>
+                    <ul className='mt-6 space-y-4'>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <FaHashtag className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-[#0E0F18] font-bold'>
+                          Diseño de presentaciones a medida, con gráficos y visuales personalizados
+                        </p>
+                      </li>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <FaHashtag className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-[#0E0F18] font-bold'>
+                          Integración de elementos que refuercen la marca personal (colores, logotipos, etc.)
+                        </p>
+                      </li>
+                    </ul>
+                    <div>
+                      <Link
+                        target='blank'
+                        href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
+                      >
+                        <BotonContratarDesarrollo />
+                      </Link>
+                    </div>
+                  </div>
+
+                  <div className=' shadow-lg shadow-[--primary-color] p-4 mb-10 lg:mb-0 flex flex-col justify-between'>
+                    <div>
+                      <h2 className=' leading-6 h-10  bg-clip-text text-transparent bg-gradient-to-r from-[#0e0f1852] to-[#0E0F18] text-3xl font-bold tracking-tighter '>
+                        Biografía Digital
+                      </h2>
+                      <p className='mt-2 text-sm text-[#0E0F18] font-bold'>
+                        Diseño de una biografía visual o multimedia que represente de manera impactante la trayectoria y logros del cliente.
+                      </p>
+                      <p className='mt-3 text-2xl font-bold text-green-500'>
+                        Consultar costo
+                      </p>
+                      <p className='mt-4 text-sm text-[#0E0F18] font-bold'>
+                        Se abona mensualmente.
+                      </p>
+                    </div>
+                    <ul className='mt-6 space-y-4'>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <FaHashtag className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-[#0E0F18] font-bold'>
+                          Diseño de secciones visuales para biografías personales en sitios web o perfiles sociales
+                        </p>
+                      </li>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <FaHashtag className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-[#0E0F18] font-bold'>
+                          Creación de gráficos, imágenes, y textos que refuercen la historia personal del cliente
+                        </p>
+                      </li>
+                      <li className='flex items-start'>
+                        <div className='flex-shrink-0'>
+                          <FaHashtag className='h-6 w-6 text-green-500' />
+                        </div>
+                        <p className='ml-3 text-left text-[#0E0F18] font-bold'>
+                          Integración con portales de networking como LinkedIn
+                        </p>
+                      </li>
+                    </ul>
+                    <div>
+                      <Link
+                        target='blank'
+                        href='https://api.whatsapp.com/send?phone=+543794077764&text=Hola,%20me%20gustaria%20hacer%20una%20consulta'
+                      >
+                        <BotonContratarDesarrollo />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
     </section>
   );
 };
