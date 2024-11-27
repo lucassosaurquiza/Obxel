@@ -41,7 +41,7 @@ const NavBar = () => {
                         <Link
                             key={link.href}
                             href={link.href}
-                            className={`text-sm text-white font-medium underline-offset-4 transition duration-300 ease-in-out ${pathname === link.href ? "text-emerald-300 underline" : ""
+                            className={`hover:underline hover:text-emerald-300 text-sm text-white font-medium underline-offset-4 transition duration-300 ease-in-out ${pathname === link.href ? "text-emerald-300 underline" : ""
                                 }`}
                         >
                             {link.label}
