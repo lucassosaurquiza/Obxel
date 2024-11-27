@@ -1,9 +1,10 @@
 'use client';
 
 import Link from "next/link"
-import BotonHamburguesa from "./BotonHamburguesa";
+import NavBar from "./NavegacionComponente";
 
 const HeaderComponent = () => {
+
 
 
   return (
@@ -23,34 +24,7 @@ const HeaderComponent = () => {
               <p className="text-white font-bold text-3xl">OX</p>
             </div>
           </Link>
-          <nav className="md:flex gap-4">
-            <div className="lg:flex gap-4 hidden">
-              <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="/">
-                Inicio
-              </Link>
-              <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="Precios">
-                Precios
-              </Link>
-              <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="Marketing">
-                Marketing
-              </Link>
-              <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="Marca">
-               Marca
-              </Link>
-              <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="Proyectos">
-                Proyectos
-              </Link>
-              <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="AnalisisDeMercado">
-                Analisis de mercado
-              </Link>
-              <Link className="text-sm text-white font-medium hover:underline hover:text-[#11E096] underline-offset-4 transition duration-300 ease-in-out" href="Nosotros">
-                Nosotros
-              </Link>
-            </div>
-            <div className="flex lg:hidden">
-              <BotonHamburguesa />
-            </div>
-          </nav>
+          <NavBar />
         </div>
       </header>
     </>
